@@ -1,11 +1,14 @@
 {
   "name": "omni-channel-express",
   "version": "1.0.0",
+  "homepage": "https://navinprasad.github.io/AquaberryUpdated",
   "description": "",
   "main": "bundle.js",
   "scripts": {
-    "dev": "webpack-dev-server --hot",
-    "start": "webpack -p && cd server && node ./server.js"
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build",
+    "build": "webpack-dev-server --hot",
+    // "start": "webpack -p && cd server && node ./server.js"
   },
   "author": "",
   "license": "ISC",
@@ -47,5 +50,7 @@
     "webpack-bundle-analyzer": "^2.10.0",
     "webpack-dev-server": "^2.9.4"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "gh-pages": "^1.1.0"
+  }
 }
