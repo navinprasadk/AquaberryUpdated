@@ -33,7 +33,7 @@ export default class ComboCart extends Component {
     render() {
         const { activeIndex } = this.state;
         return (
-            <div className="bgImage_orderDetails">
+            <div className="bgImage_orderDetails" style={{overflow:'hidden'}}>
                 <AppBar />
 
                 <Grid>

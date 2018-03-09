@@ -63,7 +63,6 @@ export default class GoogleSearch extends Component {
   }
 
   handleUserInput() {
-    console.log("inside user input");
     let input = " want to buy formal evening dresses";
     let data = input.split(" ");
     let i = 0;
@@ -160,7 +159,6 @@ export default class GoogleSearch extends Component {
                       }}
                     >
                       Workwear | work clothes for women | Aquaberry
-                      {/* Women's Top: Buy Jeans Top Online at best prices in London - Aquaberry, one of the best online fashionable store in the world */}
                     </Card.Header>
                     <Card.Meta
                       id="googleSearchLink"
@@ -176,7 +174,6 @@ export default class GoogleSearch extends Component {
                       https://m.aquaberry.com>Womens-dresses>results
                     </Card.Meta>
                   </Link>
-                  {/* </Card.Content> */}
                   <Divider />
                   <p
                     id="googleSearchDescription"
@@ -230,7 +227,6 @@ export default class GoogleSearch extends Component {
                       }}
                     >
                       Officewear for women | BOBO
-                      {/* Women's Tops | Women's Shirts, Blouses, and T-Shirts | BOBO */}
                     </Card.Header>
                     <Card.Meta
                       id="googleSearchLink"
@@ -246,7 +242,6 @@ export default class GoogleSearch extends Component {
                       https://m.bobo.com>Womens-topmaterials>womenstop
                     </Card.Meta>
                   </Link>
-                  {/* </Card.Content> */}
                   <Divider />
                   <p
                     id="googleSearchDescription"
@@ -301,7 +296,6 @@ export default class GoogleSearch extends Component {
                     >
                       women's workwear | ladies smart clothing & workwear |
                       Terra
-                      {/* Women's Shirts & Blouses | New Collection Online | Terra United States */}
                     </Card.Header>
                     <Card.Meta
                       id="googleSearchLink"
@@ -317,7 +311,6 @@ export default class GoogleSearch extends Component {
                       https://m.terra.com>dressforwomens-womens/women
                     </Card.Meta>
                   </Link>
-                  {/* </Card.Content> */}
                   <Divider />
                   <p
                     id="googleSearchDescription"
@@ -333,7 +326,6 @@ export default class GoogleSearch extends Component {
                     Explore women's workwear at Terra. Look stylish in the
                     office with sharply cut suits, smart work dresses and
                     tailored jackets & blazers. Shop now
-                    {/* Check out our gorgeous range of women's tops from Bobo at an affordable price. Happy Shopping */}
                   </p>
                 </Card.Content>
               </Card>
@@ -518,7 +510,6 @@ export default class GoogleSearch extends Component {
               marginLeft: "2%"
             }}
           />{" "}
-          {/* <Image src="http://evananthony.com/myFiles/googleAssistant/opa_voice.gif" size="small" style={{ marginLeft:'2%' }}/> */}
           <Card
             style={{
               borderRadius: "30px",
@@ -679,30 +670,6 @@ export default class GoogleSearch extends Component {
                   marginTop: "2%"
                 }}
               />
-              {/* {
-            gif url:https://3.bp.blogspot.com/-uuy4oHM8YNU/VelHUJMDJMI/AAAAAAACEzc/A0zvTppv8uE/s320/g-dots.gif
-            this.state.welcomeImageStatus ? <Image src="https://3.bp.blogspot.com/-uuy4oHM8YNU/VelHUJMDJMI/AAAAAAACEzc/A0zvTppv8uE/s320/g-dots.gif" size="tiny"
-             style={{
-               marginLeft: '36%'
-             }}
-           /> : null
-         }
-         {
-           this.state.userImageStatus ?
-             <Image src="" size="tiny"
-             style={{
-               marginLeft: '36%'
-             }}
-           /> : null
-         }
-         {
-           this.cardImageStatus ?
-             <Image src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/2000px-Google_mic.svg.png" size="large"
-             style={{
-               marginLeft: '36%'
-             }}
-           /> : null
-         } */}
             </Grid.Column>
             <Grid.Column width={1} />
           </Grid.Row>
