@@ -82,7 +82,7 @@ export default class GoogleSearch extends Component {
       if (i === data.length + 1) {
         clearInterval(timerId);
       }
-    }, 500);
+    }, 750);
 
     {
       /*Timeout for adminInputCard*/
@@ -97,7 +97,7 @@ export default class GoogleSearch extends Component {
         loaderStatus: true,
         userImageStatus: true
       });
-    }, 5100);
+    }, 5800);
 
     setTimeout(() => {
       this.handleCardResults();
