@@ -233,21 +233,10 @@ import AppBar from "./AppBar.jsx";
               >
                 <Image
                   size="medium"
-                  style={{ borderRadius: "2%", height: "100%" }}
+                  style={{ borderRadius: "2%", height: "43vh" }}
                   src="/client/assets/Images/istock/512175755u.jpg"
                 />
               </Grid.Column>
-              {/* <Grid.Column width={4}>
-                            <Grid.Row >
-                                <Image size='tiny' style={{ borderRadius: "10%", margin:'30% 0%'}} src='/client/assets/Images/istock/686261786top.jpg' />
-                            </Grid.Row>
-                           <Grid.Row>
-                                <Image size='tiny' style={{ borderRadius: "10%", margin: '30% 0%'}} src='/client/assets/Images/istock/686261786handbag.jpg' />
-                            </Grid.Row>
-                            <Grid.Row>
-                                <Image size='tiny' style={{ borderRadius: "10%", margin: '30% 0%'}} src='/client/assets/Images/istock/686261786slipper.jpg' />
-                            </Grid.Row>
-                        </Grid.Column> */}
               <Grid.Column width={2} />
             </Grid.Row>
 
@@ -273,17 +262,6 @@ import AppBar from "./AppBar.jsx";
                   src="/client/assets/Images/istock/847389916.jpg"
                 />
               </Grid.Column>
-              {/* <Grid.Column width={4}>
-                            <Grid.Row >
-                                <Image size='tiny' style={{ borderRadius: "10%", margin:'30% 0%'}} src='/client/assets/Images/istock/686261786top.jpg' />
-                            </Grid.Row>
-                           <Grid.Row>
-                                <Image size='tiny' style={{ borderRadius: "10%", margin: '30% 0%'}} src='/client/assets/Images/istock/686261786handbag.jpg' />
-                            </Grid.Row>
-                            <Grid.Row>
-                                <Image size='tiny' style={{ borderRadius: "10%", margin: '30% 0%'}} src='/client/assets/Images/istock/686261786slipper.jpg' />
-                            </Grid.Row>
-                        </Grid.Column> */}
               <Grid.Column width={2} />
             </Grid.Row>
           </Slider>

@@ -156,7 +156,7 @@ export default class WomenCategoryWebView extends Component {
                 <div>
                   <center style={{ marginTop: "5%" }}>
                     <p className="WomenCategoryWebViewTitle">
-                      Sylvia Red Knitted Top
+                      Sylvia Short Yellow Dress
                     </p>
                   </center>
                   <center>
@@ -184,7 +184,8 @@ export default class WomenCategoryWebView extends Component {
                 />
                 <div>
                   <center style={{ marginTop: "5%" }}>
-                    <p className="WomenCategoryWebViewTitle" />
+                    <p className="WomenCategoryWebViewTitle">
+                    Clara Classic Black Dress</p>
                   </center>
                   <center>
                     <p className="WomenCategoryWebViewPrice">$40.00</p>
@@ -214,7 +215,7 @@ export default class WomenCategoryWebView extends Component {
                 />
                 <div>
                   <center style={{ marginTop: "5%" }}>
-                    <p className="WomenCategoryWebViewTitle">Ben Fur Jacket</p>
+                    <p className="WomenCategoryWebViewTitle">Ben Classic Long Grey Dress</p>
                   </center>
                   <center>
                     <p className="WomenCategoryWebViewPrice">$30.00</p>
@@ -234,14 +235,13 @@ export default class WomenCategoryWebView extends Component {
               </Grid.Column>
               <Grid.Column width={7}>
                 <Image
-                  src="./client/assets/Images/istock/174932808.jpg"
+                  src="./client/assets/Images/istock/904593662.jpg"
                   alt=""
                 />
                 <div>
                   <center style={{ marginTop: "5%" }}>
                     <p className="WomenCategoryWebViewTitle">
-                      Emy Turtle Neck Knitted Top
-                    </p>
+Emy Pleated Peach Dress                    </p>
                   </center>
                   <center>
                     <p className="WomenCategoryWebViewPrice">$20.00</p>
@@ -262,7 +262,7 @@ export default class WomenCategoryWebView extends Component {
               <Grid.Column width={1} />
             </Grid.Row>
 
-            <Grid.Row only="mobile">
+            {/* <Grid.Row only="mobile">
               <Grid.Column width={1} />
 
               <Grid.Column width={7}>
@@ -321,9 +321,9 @@ export default class WomenCategoryWebView extends Component {
                 </div>
               </Grid.Column>
               <Grid.Column width={1} />
-            </Grid.Row>
+            </Grid.Row> */}
 
-            {/* <Grid.Row only="mobile">
+            <Grid.Row only="mobile">
               <Grid.Column width={1} />
               <Grid.Column width={7}>
                 <Image
@@ -333,7 +333,7 @@ export default class WomenCategoryWebView extends Component {
                 <div>
                   <center style={{ marginTop: "5%" }}>
                     <p className="WomenCategoryWebViewTitle">
-                      Fem multicolor stole
+                      Fem multicolor stole 
                     </p>
                   </center>
                   <center>
@@ -360,7 +360,7 @@ export default class WomenCategoryWebView extends Component {
                 <div>
                   <center style={{ marginTop: "5%" }}>
                     <p className="WomenCategoryWebViewTitle">
-                      Megan black embroidered top{" "}
+                      Megan Black Embroidered Dress{" "}
                     </p>
                   </center>
                   <center>
@@ -380,7 +380,7 @@ export default class WomenCategoryWebView extends Component {
                 </div>
               </Grid.Column>
               <Grid.Column width={1} />
-            </Grid.Row> */}
+            </Grid.Row>
           </Grid>
         )}
       </div>

@@ -64,8 +64,15 @@ class Recommendation extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      list: 0
+      list: 0,
+      wishlistStatus: false
     };
+    this.handleWishlist = this.handleWishlist.bind(this);
+  }
+  handleWishlist() {
+    this.setState({
+      wishlistStatus: true
+    });
   }
   render() {
     var settings = {
@@ -96,20 +103,7 @@ class Recommendation extends Component {
         onClick={() => this.props.AddtoCart(data[0])}
       />
     );
-    if (cookies.get("flag2") == 1) {
-      hearticon = (
-        <Icon
-          name="heart"
-          style={{
-            position: "absolute",
-            top: "8px",
-            right: "16px",
-            color: "red"
-          }}
-          size="large"
-        />
-      );
-    }
+
     var womanCategory = this.props.cartDetails.women.map((item, key) => {
       var iconComponent = item.checked ? (
         <Icon
@@ -228,6 +222,14 @@ class Recommendation extends Component {
                   style={{ borderRadius: "10%", height: "100%" }}
                   src="/client/assets/Images/istock/171301947.jpg"
                 />
+                <Icon
+                  name="empty heart"
+                  style={{ position: "absolute", top: "8px", right: "16px" }}
+                  size="large"
+                  color="red"
+                  // onClick={() => }
+                />
+
                 <span style={{ marginTop: "4%", textTransform: "capitalise" }}>
                   <center>
                     <h5 style={{ fontFamily: "Raleway", fontSize: "90%" }}>
@@ -261,6 +263,13 @@ class Recommendation extends Component {
                   size="large"
                   style={{ borderRadius: "10%", height: "100%" }}
                   src="/client/assets/Images/istock/185245429.jpg"
+                />
+                <Icon
+                  name="empty heart"
+                  style={{ position: "absolute", top: "8px", right: "16px" }}
+                  size="large"
+                  color="red"
+                  // onClick={() => }
                 />
                 <span style={{ marginTop: "4%", textTransform: "capitalise" }}>
                   <center>
@@ -296,6 +305,13 @@ class Recommendation extends Component {
                   style={{ borderRadius: "10%", height: "100%" }}
                   src="/client/assets/Images/istock/469138016.jpg"
                 />
+                <Icon
+                  name="empty heart"
+                  style={{ position: "absolute", top: "8px", right: "16px" }}
+                  size="large"
+                  color="red"
+                  // onClick={() => }
+                />
                 <span style={{ marginTop: "4%", textTransform: "capitalise" }}>
                   <center>
                     <h5 style={{ fontFamily: "Raleway", fontSize: "90%" }}>
@@ -329,6 +345,13 @@ class Recommendation extends Component {
                   size="large"
                   style={{ borderRadius: "10%", height: "100%" }}
                   src="/client/assets/Images/istock/453681153.jpg"
+                />
+                <Icon
+                  name="empty heart"
+                  style={{ position: "absolute", top: "8px", right: "16px" }}
+                  size="large"
+                  color="red"
+                  // onClick={() => }
                 />
                 <span style={{ marginTop: "4%", textTransform: "capitalise" }}>
                   <center>

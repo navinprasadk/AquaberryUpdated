@@ -74,7 +74,7 @@ render(){
       marginBottom:'19%'
     }
     // console.log('wish',this.state.wishList);
-    var button_component=(<Button className='buttonBackground' style={{ fontFamily:'Raleway', letterSpacing:"2px", boxShadow: "5px 10px 18px #eee", color:"white"}} fluid  size='big' >ADD TO BAG</Button>);
+    var button_component=(<Link to='/infoPage'><Button className='buttonBackground' style={{ fontFamily:'Raleway', letterSpacing:"2px", boxShadow: "5px 10px 18px #eee", color:"white"}} fluid  size='big' >ADD TO BAG</Button></Link>);
     // if(cookies.get('flag')==1){
     //   button_component = (<Button style={{fontFamily:'Source Sans Pro, sans-serif'}} fluid color='green' size='big'>ADDED</Button>)
     // }
@@ -131,20 +131,6 @@ render(){
           <Grid.Column width={4} style={{color:'green',marginTop:'1%',fontSize:'18px'}}>25% off</Grid.Column>
           </Grid.Row>
 
-          {/* <Grid.Row style={{marginTop:"-2%"}}>
-            <Grid.Column width={1}></Grid.Column>
-            <Grid.Column width={4} style={{fontWeight:"bold"}}>SIZE</Grid.Column>
-            <center><Grid.Column width={1} style={{fontWeight:"bold",}}><Label>S</Label></Grid.Column></center>
-            <Grid.Column width={1}/>
-            <center><Grid.Column width={1} style={{fontWeight:"bold",}}><Label>M</Label></Grid.Column></center>
-            <Grid.Column width={1}/>
-
-            <center><Grid.Column width={1} style={{fontWeight:"bold",}}><Label>L</Label></Grid.Column></center>
-            <Grid.Column width={4}/>
-
-            <Grid.Column width={1}></Grid.Column>
-
-          </Grid.Row> */}
         <Grid.Row style={{marginTop:'-5%'}}>
           <Grid.Column width={1}/>
           <Grid.Column width={14}>
@@ -161,7 +147,7 @@ render(){
           </Grid.Column>
           {/* <Grid.Column width={2}/> */}
           <Grid.Column width={4}>
-          <span style={{fontFamily: 'Raleway'}}>5 Items</span>
+          <span style={{fontFamily: 'Raleway'}}>3 Items</span>
           </Grid.Column>
         </Grid.Row>
 
