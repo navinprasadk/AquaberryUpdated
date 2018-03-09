@@ -5,11 +5,9 @@ import Drawer from 'material-ui/Drawer';
 import MenuItem from 'material-ui/MenuItem';
 import signin from './Signin.jsx';
 import ProductDetails from './ProductDetails.jsx';
-import Cookies from 'universal-cookie';
 import Badge from 'material-ui/Badge';
 import IconButton from 'material-ui/IconButton';
 import NotificationsIcon from 'material-ui/svg-icons/social/notifications';
-const cookies = new Cookies();
 
 import { connect } from 'react-redux';
 

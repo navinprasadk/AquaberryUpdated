@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import { Grid ,Feed, Image, Icon, Menu, Card, Button} from 'semantic-ui-react';
 import {Link} from 'react-router-dom';
 
-export default class PageNotFound extends Component{
+export default class SocialHandle extends Component{
   constructor(props){
     super(props);
     this.state={

@@ -3,10 +3,8 @@ import { Grid, Image,Button , Icon, Dropdown, Modal, Label} from 'semantic-ui-re
 import { Link, Redirect } from 'react-router-dom';
 import Slider from 'react-slick';
 import Appbar  from './AppBar.jsx';
-import '../styles/style.css';
 import ProductRecommended from './ProductRecommended.jsx';
-import Cookies from 'universal-cookie';
-import { VoicePlayer, VoiceRecognition } from 'react-voice-components';
+import { VoicePlayer } from 'react-voice-components';
 import { hashHistory } from 'react-router';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
@@ -19,7 +17,6 @@ const data=[{
   cost:40
 }]
 // import Speech from 'react-speech';
-const cookies = new Cookies();
 class ProductDetails extends Component{
   constructor(props){
     super(props);

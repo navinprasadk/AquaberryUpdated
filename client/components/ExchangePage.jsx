@@ -2,7 +2,8 @@ import React, {Component} from 'react';
 import { Grid, Divider, Header, Image, Radio, Form, Segment,Modal,Button,Icon } from 'semantic-ui-react';
 import {Link} from 'react-router-dom';
 import AppBar from './AppBar.jsx';
-export default class PageNotFound extends Component{
+
+export default class ExchangePage extends Component{
   constructor(props){
     super(props);
     this.state={

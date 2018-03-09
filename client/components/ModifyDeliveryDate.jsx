@@ -75,8 +75,6 @@ export default class ModifyDeliveryDate extends Component {
                     </Grid.Row>
 
 
-
-
                 </Grid>
                 <ChatApp style={{height:"50%",fontFamily:'Raleway'}} />
             </div>

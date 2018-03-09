@@ -1,14 +1,11 @@
-import React, { Component } from "react";
+import React from "react";
 import { Grid, Card, Icon, Image, Button, Divider } from "semantic-ui-react";
 import { Link } from "react-router-dom";
 import Slider from "react-slick";
 import AppBar from "./AppBar.jsx";
 
-export default class Promotions extends Component {
-  constructor(props) {
-    super(props);
-  }
-  render() {
+ const Promotions = () =>  {
+  
     var settings = {
       dots: false,
       infinite: false,
@@ -16,6 +13,7 @@ export default class Promotions extends Component {
       slidesToShow: 2,
       slidesToScroll: 1
     };
+    
     var settingsOutfit = {
       dots: true,
       infinite: true,
@@ -506,4 +504,6 @@ export default class Promotions extends Component {
       </div>
     );
   }
-}
+
+
+export default Promotions;

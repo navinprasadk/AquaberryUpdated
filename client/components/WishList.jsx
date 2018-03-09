@@ -1,14 +1,10 @@
-import React, {Component} from 'react';
+import React from 'react';
 import { Grid, Image, Segment } from 'semantic-ui-react';
 import AppBar from './AppBar.jsx';
 import {Link} from 'react-router-dom';
-import '../styles/style.css';
 
-export default class WishList extends Component{
-  constructor(props){
-    super(props);
-  }
-render(){
+const WishList = () => {
+  
   return(
     <div style={{overflow:'hidden'}}>
       <AppBar/>
@@ -88,5 +84,7 @@ render(){
     </Grid>
     </div>
   );
+
 }
-}
+
+export default WishList;

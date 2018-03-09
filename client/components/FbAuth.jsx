@@ -2,9 +2,8 @@ import React, {Component} from 'react';
 import { Dimmer, Loader, Grid, Menu, Icon, Button } from 'semantic-ui-react';
 import Snackbar from 'material-ui/Snackbar';
 import { Link, Redirect } from 'react-router-dom';
-import '../styles/style.css';
 
-export default class fbAuth extends Component{
+export default class FbAuth extends Component{
   constructor(props){
     super(props);
     this.state = {

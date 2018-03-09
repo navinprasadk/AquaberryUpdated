@@ -3,7 +3,7 @@ import { Grid, Button, Image, Header, Icon, Segment, Message, Accordion, Step, D
 import { Link } from 'react-router-dom';
 import AppBar from './AppBar.jsx';
 
-export default class OrderDetails extends Component {
+export default class NotificationScreen extends Component {
     constructor(props) {
         super(props);
         this.state = {

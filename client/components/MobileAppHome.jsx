@@ -12,7 +12,6 @@ import {
   Loader,
   Message
 } from "semantic-ui-react";
-import "../styles/style.css";
 import AppBar from "./AppBar.jsx";
 import { Link } from "react-router-dom";
 

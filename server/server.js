@@ -100,13 +100,13 @@ app.use(
 app.use(bodyParser.json());
 
 app.get("/test", function(req, res) {
-  console.log("Recieved Request");
+  // console.log("Recieved Request");
   res.send("Server Running Healthy!");
 });
 
 app.get("/callDialogflow/:utterance/:counter", function(req, res) {
-  console.log("Query received: ", req.params.utterance);
-  console.log("Counter: ", req.params.counter);
+  // console.log("Query received: ", req.params.utterance);
+  // console.log("Counter: ", req.params.counter);
   var counter = req.params.counter,
     query = req.params.utterance.toUpperCase();
   if (counter == 1) {

@@ -3,17 +3,11 @@ import request from 'superagent';
 import { Grid, Segment, Icon, Image,Card,Input, Modal, Button,Header} from 'semantic-ui-react';
 import TextField from 'material-ui/TextField';
 import {Link} from 'react-router-dom';
-
-//import { CardActions, CardHeader, CardMedia, CardTitle, CardText } from 'material-ui/Card';
-// import Paper from 'material-ui/Paper';
-// import TextField from 'material-ui/TextField';
 import IconButton from 'material-ui/IconButton';
 import AvMic from 'material-ui/svg-icons/av/mic';
-// import ContentSend from 'material-ui/svg-icons/content/send';
-// import Android from 'material-ui/svg-icons/action/android';
 import Avatar from 'material-ui/Avatar';
-// import { Row, Col } from 'react-flexbox-grid';
 import { red500, yellow500, blue500, orange200, pink400 } from 'material-ui/styles/colors';
+
 var SpeechRecognition = SpeechRecognition || webkitSpeechRecognition;
 var SpeechGrammarList = SpeechGrammarList || webkitSpeechGrammarList;
 var SpeechRecognitionEvent = SpeechRecognitionEvent || webkitSpeechRecognitionEvent;

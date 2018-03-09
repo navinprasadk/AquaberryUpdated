@@ -1,15 +1,10 @@
-import React, {Component} from 'react';
+import React from 'react';
 import { Grid, Card, Icon, Image } from 'semantic-ui-react';
 import Slider from 'react-slick';
 import {Link} from 'react-router-dom';
-import '../styles/style.css';
 
-export default class ProductRecommended extends Component{
-  constructor(props){
-    super(props);
-  }
-
-render(){
+const ProductRecommended = () => {
+  
   var settings = {
      centerMode: true
    };
@@ -21,7 +16,7 @@ render(){
           <Grid.Column width={14}>
     <Slider {...settings}>
         <div><Card style={{width:'80%'}}>
-    <center><Image src='http://media.wallis.co.uk/wcsstore/Wallis/images/catalog/WL256201024_3col_P_1.jpg' size='small'/></center>
+    <center><Image src= 'http://media.wallis.co.uk/wcsstore/Wallis/images/catalog/WL256201024_3col_P_1.jpg' size='small'/></center>
     <Card.Content>
       <Card.Header style={{fontFamily: 'Raleway'}}>Navy Paisley Print Shell Top
 </Card.Header>
@@ -66,4 +61,5 @@ render(){
       </div>
   );
 }
-}
+
+export default ProductRecommended;

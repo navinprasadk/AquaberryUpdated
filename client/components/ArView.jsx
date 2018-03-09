@@ -4,8 +4,6 @@ import {Link} from 'react-router-dom';
 import Slider from 'react-slick';
 import CartDetails from './CartDetails.jsx';
 import AppBar from './AppBar.jsx';
-import '../styles/style.css';
-
 import AddToCartHandler from './../../redux/actions/addToCart.js';
 
 import { bindActionCreators } from 'redux';
@@ -13,7 +11,7 @@ import { connect } from 'react-redux';
 
 var count1 = 0;
 var cartArray = [];
-class PageNotFound extends Component{
+class ArView extends Component{
   constructor(props){
     super(props);
     this.state = {
@@ -105,7 +103,6 @@ render(){
 }
 }
 
-
 function mapStateToProps(state){
   return {
     cartDetails:state.cartReducer
@@ -118,4 +115,4 @@ function matchDispatchToProps(dispatch){
   },dispatch)
 }
 
-export default connect(mapStateToProps,matchDispatchToProps)(PageNotFound);
+export default connect(mapStateToProps,matchDispatchToProps)(ArView);

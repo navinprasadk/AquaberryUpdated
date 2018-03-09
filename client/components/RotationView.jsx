@@ -1,22 +1,17 @@
-import React, {Component} from 'react'
+import React from 'react'
 import {render} from 'react-dom';
 import Rotation from 'react-rotation';
 import { Grid } from 'semantic-ui-react';
 
-export default class RotationView extends Component{
-  constructor(props){
-    super(props);
-  }
-
+const RotationView = () => {
   
-render(){
   var rotationSettings = {
     scroll:true,
     cycle:true,
   }
+
   return(
     <Grid>
-
       <Grid.Row only='mobile'>
         <Grid.Column width={2}></Grid.Column>
         <Grid.Column width={12}>
@@ -37,14 +32,12 @@ render(){
             <img src='./client/assets/Images/360/13.jpg' />
             <img src='./client/assets/Images/360/14.jpg' />
             <img src='./client/assets/Images/360/15.jpg' />
-
-
           </Rotation>
         </Grid.Column>
         <Grid.Column width={2}></Grid.Column>
       </Grid.Row>
-
     </Grid>
   );
 }
-}
+
+export default RotationView;

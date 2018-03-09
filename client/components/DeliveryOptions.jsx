@@ -20,7 +20,9 @@ componentWillMount() {
         dateValue: x
       });
 }
+
 handleChange = (e, { value }) => this.setState({ value:value})
+
 render(){
   return(
     <div>

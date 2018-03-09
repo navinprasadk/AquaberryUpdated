@@ -16,7 +16,6 @@ import { VoicePlayer, VoiceRecognition } from "react-voice-components";
 import { Link } from "react-router-dom";
 import Slider from "react-slick";
 import { BeatLoader } from "halogenium";
-import "../styles/style.css";
 
 export default class GoogleSearch extends Component {
   constructor(props) {
