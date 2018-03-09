@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Menu, Icon, Grid,  Header,  Button, Modal, Loader } from 'semantic-ui-react';
+import {Menu, Icon, Grid,  Header,  Button, Modal, Loader, Image } from 'semantic-ui-react';
 import {Link} from 'react-router-dom';
 import Drawer from 'material-ui/Drawer';
 import MenuItem from 'material-ui/MenuItem';
@@ -59,7 +59,10 @@ export default class AppBarWebView extends Component {
             <Grid.Column width={16}>
               <Menu secondary style={{backgroundColor:'#DF4B37', color:'#FFFFFF'}}>
                   <Menu.Item style={{color:'#FFFFFF'}}><Icon size="large" name="bars" onClick={this.handleToggle.bind(this)}/></Menu.Item>
-                  <Menu.Item header id="titleText" style={{fontWeight:'normal', letterSpacing:'3px', textTransform:'capitalize', color:"#FFFFFF", float:"left", fontSize:'140%'}} name='Aquaberry' />
+                  <Menu.Item>
+                    <Image size='small' src='./client/assets/Images/istock/aquaberry1.png'/>
+                  </Menu.Item>
+                  {/* <Menu.Item header id="titleText" style={{fontWeight:'normal', letterSpacing:'3px', textTransform:'capitalize', color:"#FFFFFF", float:"left", fontSize:'140%'}} name='Aquaberry' /> */}
                   <Menu.Menu position='right'>
                     <Menu.Item name="Signin"><Icon size="large" name="search" style={{color:'#FFFFFF'}} /></Menu.Item>
                     <Menu.Item name="Signin"><Icon size="large" name="shopping bag" style={{color:'#FFFFFF'}} /></Menu.Item>

@@ -44,7 +44,7 @@ handlecolor4(){
     return (
       <div>
 
-        
+
         <Grid>
           <Grid.Row/>
           <Grid.Row>
@@ -55,7 +55,7 @@ handlecolor4(){
               </Link>
             </Grid.Column>
             <Grid.Column width={11}>
-              <h2><strong>Polka Dot Tie-Up Top</strong></h2>
+              <h2><strong>Sia Dress w/ Pockets</strong></h2>
             </Grid.Column>
           </Grid.Row>
           <Grid.Row>
@@ -67,13 +67,13 @@ handlecolor4(){
                     INFO
                   </Accordion.Title>
                   <Accordion.Content active={activeIndex === 0}>
-                    <p>Polka Dot Tie-Up Top
+                    <p>Sia Dress w/ Pockets
                     <br/>
-                    <strong>Colour:</strong> White
+                    <strong>Colour:</strong> Red
                     <br/>
                     <strong>Item Code:</strong>1945688</p>
                     <p>Model wears size S</p>
-                    <p>Add a touch of glamour to your look with this gorgeous polka dot top. Wear with jeans and heels.</p>
+                    <p>Add a touch of glamour to your look with this gorgeous dress. Complemented with black high heels.</p>
                     <List bulleted>
                       <List.Item>Fitted</List.Item>
                       <List.Item>Machine Washing</List.Item>

@@ -46,7 +46,7 @@ module.exports = (
     recommend: [
       {
         imgurl: "./client/assets/Images/istock/DigiCat/624248974.jpg",
-        name: "Anna Black Embroidered Dress",
+        name: "Anna Black Dress",
         price: "$15.00",
         checked: false
       },
@@ -70,7 +70,7 @@ module.exports = (
       },
       {
         imgurl: "./client/assets/Images/istock/DigiCat/517726549.jpg",
-        name: "Ash Black Bell Cap Short Dress",
+        name: "Ash Black Bell Cap Dress",
         price: "$19.60",
         checked: false
       },

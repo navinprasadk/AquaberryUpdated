@@ -56,10 +56,10 @@ export default class ModifyDeliveryDate extends Component {
                         </Grid.Column>
                         <Divider />
                         <Grid.Column width={16}  style={{ display: "flex", flexDirection: "row", justifyContent: "flex-start" }}>
-                            <Image size='tiny' style={{ borderRadius: "10%", height: '100%' }} src='/client/assets/Images/istock/622809430ss.jpg' />
+                            <Image size='tiny' style={{ borderRadius: "10%", height: '100%' }} src='/client/assets/Images/istock/467870548-1.jpg' />
                             <p style={{ marginLeft: "3%",fontFamily:'Raleway'}}>
-                                <Header className="darkText" > Polka Dot Tie-Up Top</Header>
-                                <p className="greyText" style={{ display: "flex", flexDirection: "row", justifyContent: "space-between", fontSize: "90%", color: "#9E9E9E",fontFamily:'Raleway' }}><span><Header>15$</Header></span>   <span><span style={{ fontWeight: "bold" }}>Quantity</span> 1 Item</span> </p>
+                                <Header className="darkText" > Sia Dress w/ Pockets</Header>
+                                <p className="greyText" style={{ display: "flex", flexDirection: "row", justifyContent: "space-between", fontSize: "90%", color: "#9E9E9E",fontFamily:'Raleway' }}><span><Header>$26.00</Header></span>   <span><span style={{ fontWeight: "bold" }}>Quantity</span> 1 Item</span> </p>
 
                             </p>
                          </Grid.Column>

@@ -169,19 +169,36 @@ export default class MobileAppHome extends React.Component {
                   marginTop: "-17%"
                 }}
               >
-                <center>
-                  <Grid.Column width={16}>
-                      <Image
-                        size="big"
-                        src="./client/assets/Images/istock/home-1.png"
-                        style={{}}
-                        alt=""
-                      />
+
+                  <Grid.Column width={8} style={{backgroundColor:'#f4b486'}}>
+                    <center style={{marginTop:'50%'}}>
+                      <span style={{color:'black',fontFamily:'Raleway',fontWeight:'bold',fontSize:'20px',letterSpacing: "2px",}}>
+                        NEW SEASON TOPS
+                      </span>
+                    </center>
+                    <center style={{marginTop:"5%"}}>
+                      <span style={{color:'black',fontFamily:'Raleway',fontWeight:'bold',fontSize:'18px',letterSpacing: "2px",}}>
+                        JUST LANDED
+                      </span>
+                    </center>
+                    <center style={{marginTop:"5%"}}>
+                      <span style={{color:'black',fontFamily:'Raleway',fontWeight:'bold',fontSize:'18px',letterSpacing: "2px",}}>
+                        SHOP NOW
+                      </span>
+                    </center>
                       {/* <div style={{backgroundColor:"white"}}><span style={{position:"absolute", top:"85%", left:"33%", color:"black", backgroundColor:"white", letterSpacing:"3px", fontWeight:"bolder", fontSize:"120%", fontFamily:"Raleway"}}>STANDOUT TOPS</span>
                   <center><span style={{position:"absolute", top:"90%", left:"43%", color:"black", backgroundColor:"", letterSpacing:"2px", fontWeight:"bolder", fontSize:"100%", fontFamily:"Raleway"}}>SHOP NOW</span></center>
                   </div> */}
                   </Grid.Column>
-                </center>
+                  <Grid.Column width={8}>
+                    <Image
+                      size="big"
+                      src="./client/assets/Images/istock/DigiCat/digi-cat-1.jpg"
+                      // style={{height:'50vh'}}
+                      alt=""
+                    />
+                  </Grid.Column>
+
               </Grid.Row>
 
               <Grid.Row
@@ -194,30 +211,7 @@ export default class MobileAppHome extends React.Component {
                 <center>
                   {" "}
                   <Grid.Column width={16}>
-                    <Link to="/mWomenCategory/LACE" style={{ color: "black" }}>
-                      <Image
-                        size="big"
-                        src="./client/assets/Images/istock/home-2.jpg"
-                        style={{}}
-                        alt=""
-                      />
-                    </Link>
-                  </Grid.Column>
-                </center>
-              </Grid.Row>
-
-              <Grid.Row
-                style={{
-                  marginLeft: "0px",
-                  marginRight: "0px",
-                  marginTop: "-5%",
-                  overflow: "hidden"
-                }}
-              >
-                <center>
-                  {" "}
-                  <Grid.Column width={16}>
-                    {/* <Link to='/mWomenCategory/LACE' style={{color:"black"}}> */}
+                    <Link to="/mWomenCategory/LACE">
                     <center>
                       <Image
                         size="big"
@@ -229,7 +223,7 @@ export default class MobileAppHome extends React.Component {
                     {/* <span style={{position:"absolute", top:"90%", left:"33%", color:"black", backgroundColor:"white", letterSpacing:"3px", fontWeight:"bolder", fontSize:"120%", fontFamily:"Raleway"}}>DRESS UPDATE</span> */}
                     {/* <span style={{position:"absolute", top:"95%", left:"33%", color:"black", backgroundColor:"white", letterSpacing:"2px", fontWeight:"bolder", fontSize:"100%", fontFamily:"Raleway"}}>SHOP NOW</span> */}
                     <center>
-                      <Link to="/mWomenCategory/LACE">
+
                         <span
                           style={{
                             position: "absolute",
@@ -246,9 +240,60 @@ export default class MobileAppHome extends React.Component {
                         >
                           DRESS UPDATE
                         </span>
-                      </Link>
-                    </center>
 
+                    </center>
+                    <center>
+
+                        <span
+                          style={{
+                            position: "absolute",
+                            top: "35%",
+                            left: "15%",
+                            color: "#000",
+                            fontSize: "18px",
+                            letterSpacing: "2px",
+                            fontWeight: "800",
+                            fontSize: "150%",
+                            textTransform: "uppercase",
+                            fontFamily: "Raleway"
+                          }}
+                        >
+                          SHOP NOW
+                        </span>
+
+                    </center>
+                    </Link>
+                  </Grid.Column>
+                </center>
+              </Grid.Row>
+              {/* <Grid.Row style={{marginTop:'10%'}}>
+                <Grid.Column width={16}>
+                  <Segment style={{height:'10vh'}}>
+                    <Image src='./client/assets/Images/istock/bot.png' size='small'/>
+                  </Segment>
+              </Grid.Column>
+              </Grid.Row> */}
+              <Grid.Row
+                style={{
+                  marginLeft: "0px",
+                  marginRight: "0px",
+                  marginTop: "-5%",
+                  overflow: "hidden"
+                }}
+              >
+                <center>
+                  {" "}
+                  <Grid.Column width={16}>
+                    {/* <Link to='/mWomenCategory/LACE' style={{color:"black"}}> */}
+
+                    <Link to="/mWomenCategory/LACE" style={{ color: "black" }}>
+                      <Image
+                        size="big"
+                        src="./client/assets/Images/istock/home-2.jpg"
+                        style={{}}
+                        alt=""
+                      />
+                    </Link>
                     {/* </Link> */}
                   </Grid.Column>
                 </center>

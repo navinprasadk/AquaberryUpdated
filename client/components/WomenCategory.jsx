@@ -88,8 +88,8 @@ var productData = (this.props.cartDetails.recommend.map((item,key) => {
           {iconComponent}
       {/* </Link> */}
         <div style={{fontFamily: 'Raleway'}} >
-          <p className="WomenCategoryWebViewTitle" style={{fontWeight:"600", fontSize:"80%"}}>{item.name}</p>
-          <p className="WomenCategoryWebViewPrice" style={{marginTop:"-5%", fontSize:"80%", marginBottom:"5%"}}>{item.price}</p>
+          <p className="WomenCategoryWebViewTitle" >{item.name}</p>
+          <p className="WomenCategoryWebViewPrice" style={{marginTop:"-5%", marginBottom:"5%"}}>{item.price}</p>
         </div>
       </Grid.Column>
   )
@@ -107,7 +107,7 @@ var productData = (this.props.cartDetails.recommend.map((item,key) => {
          </Menu.Item>
          </Link>
          <Menu.Item>
-           <span id='titleText' style={{fontWeight:'normal', letterSpacing:'3px', textTransform:'capitalize', color:"#eee", float:"left", fontSize:'140%'}}>Women's Tops</span>
+           <span id='titleText' style={{fontWeight:'normal', letterSpacing:'3px', textTransform:'capitalize', color:"#eee", float:"left", fontSize:'140%'}}>Women's Dresses</span>
          </Menu.Item>
          <Menu.Menu position='right'>
            <Link to='/wishList'>

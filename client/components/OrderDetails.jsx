@@ -65,11 +65,11 @@ export default class OrderDetails extends Component {
                         </Grid.Column>
                         <Divider />
                         <Grid.Column width={16}  style={{ display: "flex", flexDirection: "row", justifyContent: "flex-start" }}>
-                            <Image size='tiny' style={{ borderRadius: "10%", height: '100%' }} src='/client/assets/Images/istock/622809430ss.jpg' />
+                            <Image size='tiny' style={{ borderRadius: "10%", height: '100%' }} src='/client/assets/Images/istock/467870548-1.jpg' />
                             <p style={{ marginLeft: "3%"}}>
-                                <Header className="darkText" > Polka Dot Tie-Up Top</Header>
-                                <p className="greyText" style={{ display: "flex", flexDirection: "row", justifyContent: "space-between", fontSize: "90%", color: "#9E9E9E" }}><span><Header className="darkText">15$</Header></span>   <span><span style={{ fontWeight: "bold" }}>Quantity</span> 1 Item</span> </p>
-                                
+                                <Header className="darkText" > Sia Dress w/ Pockets</Header>
+                                <p className="greyText" style={{ display: "flex", flexDirection: "row", justifyContent: "space-between", fontSize: "90%", color: "#9E9E9E" }}><span><Header className="darkText">$26.00</Header></span>   <span><span style={{ fontWeight: "bold" }}>Quantity</span> 1 Item</span> </p>
+
                                 <p className="greyText">  <Link to='/modifyDelivery'>Need Help?   </Link>  </p>
                             </p>
                          </Grid.Column>
@@ -99,7 +99,7 @@ export default class OrderDetails extends Component {
                             <Image size='tiny' style={{ borderRadius: "10%", height: '100%' }} src='/client/assets/Images/istock/622809430ss.jpg' />
                             <p style={{ marginLeft: "3%" }}>
                                 <Header className="darkText" > Polka Dot Tie-Up Top</Header>
-                                <p className="greyText" style={{ display: "flex", flexDirection: "row", justifyContent: "space-between", fontSize: "90%", color: "#9E9E9E" }}><span><Header className="darkText">35$</Header></span>   <span><span style={{ fontWeight: "bold" }}>Quantity</span> 2 Items</span> </p>
+                                <p className="greyText" style={{ display: "flex", flexDirection: "row", justifyContent: "space-between", fontSize: "90%", color: "#9E9E9E" }}><span><Header className="darkText">$20.00</Header></span>   <span><span style={{ fontWeight: "bold" }}>Quantity</span> 2 Items</span> </p>
                                 <p className="greyText">  Need Help?    </p>
                             </p>
                         </Grid.Column>
@@ -118,7 +118,7 @@ export default class OrderDetails extends Component {
                             <Image size='tiny' style={{ borderRadius: "10%", height: '100%' }} src='/client/assets/Images/istock/514713868ss.jpg' />
                             <p style={{ marginLeft: "3%" }}>
                                 <Header className="darkText" > Polka Black Dotted Top</Header>
-                                <p className="greyText" style={{ display: "flex", flexDirection: "row", justifyContent: "space-between", fontSize: "90%", color: "#9E9E9E" }}><span><Header className="darkText">55$</Header></span>   <span><span style={{ fontWeight: "bold" }}>Quantity</span> 3 Items</span> </p>
+                                <p className="greyText" style={{ display: "flex", flexDirection: "row", justifyContent: "space-between", fontSize: "90%", color: "#9E9E9E" }}><span><Header className="darkText">$55</Header></span>   <span><span style={{ fontWeight: "bold" }}>Quantity</span> 3 Items</span> </p>
                                 <Link to='/exchangepage'><p className="greyText">  Need Help?    </p></Link>
                             </p>
                         </Grid.Column>
@@ -137,7 +137,7 @@ export default class OrderDetails extends Component {
                             <Image size='tiny' style={{ borderRadius: "10%", height: '100%' }} src='/client/assets/Images/istock/180705919ss.jpg' />
                             <p style={{ marginLeft: "3%" }}>
                                 <Header className="darkText" >  Purple Printed Top</Header>
-                                <p className="greyText" style={{ display: "flex", flexDirection: "row", justifyContent: "space-between", fontSize: "90%", color: "#9E9E9E" }}><span><Header className="darkText">12$</Header></span>   <span><span style={{ fontWeight: "bold" }}>Quantity</span> 1 Item</span> </p>
+                                <p className="greyText" style={{ display: "flex", flexDirection: "row", justifyContent: "space-between", fontSize: "90%", color: "#9E9E9E" }}><span><Header className="darkText">$12</Header></span>   <span><span style={{ fontWeight: "bold" }}>Quantity</span> 1 Item</span> </p>
                                 <p className="greyText">  Need Help?    </p>
                             </p>
                         </Grid.Column>
