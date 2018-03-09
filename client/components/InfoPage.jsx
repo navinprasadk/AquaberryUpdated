@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import {  Grid, Accordion, Icon ,List, Image, Popup, Header, Label, Modal, Button, Card, Feed, Divider, Checkbox} from "semantic-ui-react";
 import { Link } from 'react-router-dom';
 import Appbar from './AppBar.jsx';
-import "../styles/style.css";
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
