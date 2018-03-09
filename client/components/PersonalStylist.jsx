@@ -29,6 +29,9 @@ class PersonalStylist extends Component {
       handleSpecificHeight:false
     };
   }
+  handleVoice(){
+    this.setState({audioStatusOutfit:true,audioStatus:'true'})
+  }
   handleshape(){
     this.setState({shopwithshape:true})
   }
@@ -67,11 +70,7 @@ class PersonalStylist extends Component {
         <Grid.Column width={6}>
           <Image
             circular
-            onClick={() => {
-              this.setState({
-                audioStatus: 'true'
-              });
-            }}
+            onClick={this.handleVoice.bind(this)}
             src="https://www.voicebot.net/ImagesCommon/Icons/256x256/VoiceBot.png"
             size="tiny"
             style={{
@@ -443,7 +442,7 @@ class PersonalStylist extends Component {
           {this.state.height == 'true' ? Height : null}
           {this.state.size == 'true' ? Size : null}
         </Grid>
-        {this.state.audioStatus && (
+        {this.state.audioStatusvoice && (
           <VoicePlayer play text="Hi, Tell me what you are looking for!!" />
         )}
         {this.state.audioStatusOutfit && (
