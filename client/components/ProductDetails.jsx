@@ -98,10 +98,10 @@ render(){
           <Link to='/signin'>
           {icon_component}
         </Link>
-        
+
           <Slider {...settings} style={{height:'65vh'}}>
-          <div><center><Image src='./client/assets/Images/istock/DigiCat/digi-cat-1-2.jpg' size='medium' style={{height:'65vh'}} /></center></div>
-            <div><center><Image src='./client/assets/Images/istock/DigiCat/digi-cat-1.jpg' size='medium' style={{height:'65vh'}}/></center></div>
+          <div><center><Image src='./client/assets/Images/istock/535350451.jpg' size='medium' style={{height:'65vh'}} /></center></div>
+            <div><center><Image src='./client/assets/Images/istock/467870548.jpg' size='medium' style={{height:'65vh'}}/></center></div>
             {/* <div><center><Image src='http://media.wallis.co.uk/wcsstore/Wallis/images/catalog/WL250391024_Zoom_D_1.jpg' size='medium'/></center></div>
             <div><center><Image src='http://media.wallis.co.uk/wcsstore/Wallis/images/catalog/WL250391024_Zoom_P_1.jpg' size='medium'/></center></div>
             <div><center><Image src='http://media.wallis.co.uk/wcsstore/Wallis/images/catalog/WL250391024_Zoom_M_1.jpg' size='medium'/></center></div> */}
@@ -112,7 +112,7 @@ render(){
         <Grid.Row>
           <Grid.Column width={1}/>
           <Grid.Column width={10}>
-            <h2 style={{fontSize:'18px',marginTop:'-10%',fontFamily: 'Raleway', textTransform:'capitalize'}}>Polka Dot Tie-up Top</h2>
+            <h2 style={{fontSize:'18px',marginTop:'-10%',fontFamily: 'Raleway', textTransform:'capitalize'}}>Sia Dress w/ Pockets</h2>
           </Grid.Column>
           <Grid.Column width={5}/>
         </Grid.Row>
@@ -125,10 +125,10 @@ render(){
           <Grid.Row style={{marginTop:'-6%'}}>
             <Grid.Column width={1}/>
           <Grid.Column width={4} >
-            <h3 style={{fontSize:'20px'}}>$15.00</h3>
+            <h3 style={{fontSize:'20px'}}>$26.00</h3>
           </Grid.Column>
-          <Grid.Column width={3} style={{textDecoration:'line-through',marginTop:'1%'}}>$20.00</Grid.Column>
-          <Grid.Column width={4} style={{color:'green',marginTop:'1%',fontSize:'18px'}}>25% off</Grid.Column>
+          <Grid.Column width={3} style={{textDecoration:'line-through',marginTop:'1%'}}>$33.00</Grid.Column>
+          <Grid.Column width={4} style={{color:'green',marginTop:'1%',fontSize:'18px'}}>20% off</Grid.Column>
           </Grid.Row>
 
         <Grid.Row style={{marginTop:'-5%'}}>

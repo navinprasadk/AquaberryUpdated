@@ -16,6 +16,8 @@ import {
 } from "semantic-ui-react";
 import Slider from "react-slick";
 import AppBar from "./AppBar.jsx";
+import { VoicePlayer, VoiceRecognition } from "react-voice-components";
+
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
@@ -65,7 +67,8 @@ class Recommendation extends Component {
     super(props);
     this.state = {
       list: 0,
-      wishlistStatus: false
+      voiceRecommendation:false,
+      Recommended:false
     };
     this.handleWishlist = this.handleWishlist.bind(this);
   }
@@ -73,6 +76,12 @@ class Recommendation extends Component {
     this.setState({
       wishlistStatus: true
     });
+  }
+  handleVoiceRecommendation(){
+    this.setState({voiceRecommendation:'true'})
+  }
+  onEnd(){
+
   }
   render() {
     var settings = {
@@ -103,6 +112,7 @@ class Recommendation extends Component {
         onClick={() => this.props.AddtoCart(data[0])}
       />
     );
+
 
     var womanCategory = this.props.cartDetails.women.map((item, key) => {
       var iconComponent = item.checked ? (
@@ -147,12 +157,28 @@ class Recommendation extends Component {
         <AppBar />
 
         <Grid>
-          <Grid.Row />
-
+          <Grid.Row>
+            <Grid.Column width={1}/>
+            <Grid.Column width={6}>
+              <Image
+                circular
+                onClick={this.handleVoiceRecommendation.bind(this)}
+                src="./client/assets/Images/istock/bot.png"
+                size="small"
+                style={{
+                  top: "20%",
+                  // left: "-134%"
+                }}
+              />
+            </Grid.Column>
+            <Grid.Column width={9}/>
+          </Grid.Row>
+          {this.state.Recommended == true ?
           <Grid.Row style={{ marginTop: "2%" }}>
             <Grid.Column width={16}>
               <Segment
                 style={{
+                  marginTop:'-4%',
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
@@ -163,8 +189,6 @@ class Recommendation extends Component {
                   width: "108%",
                   backgroundColor: "white",
                   color: "black",
-                  position: "fixed",
-                  zIndex: "100",
                   height: "2vh"
                 }}
               >
@@ -182,14 +206,15 @@ class Recommendation extends Component {
                 /> */}
               </Segment>
             </Grid.Column>
-          </Grid.Row>
+          </Grid.Row> : null }
         </Grid>
+        {this.state.Recommended == true ?
         <Grid centered columns={2}>
           <Grid.Row only="mobile" style={{ marginTop: "4%" }}>
             {womanCategory}
           </Grid.Row>
-        </Grid>
-
+        </Grid> : null }
+        {this.state.Recommended == true ?
         <Grid>
           <Grid.Row style={{ marginBottom: "3%" }}>
             <Grid.Column width={16}>
@@ -205,8 +230,8 @@ class Recommendation extends Component {
               </center>
             </Grid.Column>
           </Grid.Row>
-        </Grid>
-
+        </Grid> : null }
+        {this.state.Recommended == true ?
         <Slider {...styleCarouselSettings}>
           <Grid style={{ marginTop: "0%" }}>
             <Grid.Row>
@@ -372,8 +397,8 @@ class Recommendation extends Component {
               </Grid.Column>
             </Grid.Row>
           </Grid>
-        </Slider>
-
+        </Slider> : null }
+        {this.state.Recommended == true ?
         <Grid>
           <Grid.Row style={{ marginTop: "6%", marginBottom: "3%" }}>
             <Grid.Column width={16}>
@@ -390,8 +415,8 @@ class Recommendation extends Component {
               </center>
             </Grid.Column>
           </Grid.Row>
-        </Grid>
-
+        </Grid> : null }
+        {this.state.Recommended == true ?
         <Slider {...settings}>
           <Grid style={{ marginTop: "0%", marginBottom: "3%" }}>
             <Grid.Row>
@@ -446,8 +471,8 @@ class Recommendation extends Component {
               </Grid.Column>
             </Grid.Row>
           </Grid>
-        </Slider>
-
+        </Slider> : null }
+        {this.state.Recommended == true ?
         <Grid>
           <Grid.Row style={{ width: "100%" }}>
             {/* <Grid.Column width={1}/> */}
@@ -468,6 +493,18 @@ class Recommendation extends Component {
             {/* <Grid.Column width={1}/> */}
           </Grid.Row>
         </Grid>
+        : null }
+        {this.state.voiceRecommendation && (
+          <VoicePlayer play text="Here Are some Recommended items based on your preferences"
+          onEnd={() => {
+            this.setState({
+              Recommended: true,
+              voiceRecommendation:false
+            })
+          }}
+        />
+        )
+        }
       </div>
     );
   }

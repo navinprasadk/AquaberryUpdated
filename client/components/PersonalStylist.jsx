@@ -30,7 +30,7 @@ class PersonalStylist extends Component {
     };
   }
   handleVoice(){
-    this.setState({audioStatusOutfit:true,audioStatus:'true'})
+    this.setState({audioStatusvoice:true,audioStatus:'true'})
   }
   handleshape(){
     this.setState({shopwithshape:true})
@@ -355,7 +355,7 @@ class PersonalStylist extends Component {
                   fontWeight: "bold"
                 }}
               >
-                Height
+                Height (cm)
               </label>
               <Input onChange={this.handleSpecificHeight.bind(this)}
                 placeholder="Give your height..." />
