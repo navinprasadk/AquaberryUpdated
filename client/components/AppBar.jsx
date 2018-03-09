@@ -28,22 +28,22 @@ class AppBar extends Component {
   handleClose() {
     this.setState({open: false});
   }
-
   render() {
 console.log(this.props.cartDetails);
     return (
       <div>
 
-        <Grid>
+        <Grid >
      <Grid.Row only='mobile'>
        <Grid.Column width={16}>
          <Menu secondary style={{position:'fixed',zIndex:'100',width:'102%',backgroundColor:'#DF4B37',height:'8vh'}}>
            <Menu.Item>
              <Icon name="bars" size="large" onClick={this.handleToggle.bind(this)} style={{color:'white'}}/>
            </Menu.Item>
-           <Link to='/mHome' style={{display:"flex"}}>
-           <Menu.Item>
-             <span id="titleText" style={{fontWeight:'normal', letterSpacing:'3px', textTransform:'capitalize', color:"white", float:"left", fontSize:'165%'}}>Aquaberry</span>
+           <Link to='/mHome' >
+           <Menu.Item style={{display:'flux',}}>
+             <Image size='small' src='./client/assets/Images/istock/aquaberry1.png'/>
+             {/* <span id="titleText" style={{fontWeight:'normal', letterSpacing:'3px', textTransform:'capitalize', color:"white", float:"left", fontSize:'165%'}}>Aquaberry</span> */}
            </Menu.Item>
            </Link>
            <Menu.Menu position='right'>
@@ -68,8 +68,8 @@ console.log(this.props.cartDetails);
      </Grid>
 
        <Drawer docked={false} width={250} open={this.state.open} onRequestChange={(open) => this.setState({open})}>
-         <Menu.Item>
-           <center><Image circular size='tiny' src={this.state.profile}/></center>
+         <Menu.Item style={{marginTop:"5%"}}>
+           <center><Image avatar circular size='tiny' src={this.state.profile}/></center>
            <center><Header as='h3' style={{marginTop:'3%'}}>Hi Rachel</Header></center>
          </Menu.Item>
          <Menu.Item></Menu.Item>
