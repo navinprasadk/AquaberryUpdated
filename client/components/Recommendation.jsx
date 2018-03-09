@@ -17,8 +17,6 @@ import {
 import Slider from "react-slick";
 import AppBar from "./AppBar.jsx";
 import { Link } from "react-router-dom";
-import Cookies from "universal-cookie";
-const cookies = new Cookies();
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
 

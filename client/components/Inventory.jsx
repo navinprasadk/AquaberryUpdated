@@ -26,7 +26,7 @@ import Delivery from "./DeliveryOptions.jsx";
 import { ScaleLoader } from "halogenium";
 
 import { Link } from "react-router-dom";
-import "../styles/style.css";
+
 const locationDetails = [
   {
     header: "Charlotte Russe",
