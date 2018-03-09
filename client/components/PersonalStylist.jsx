@@ -71,8 +71,8 @@ class PersonalStylist extends Component {
           <Image
             circular
             onClick={this.handleVoice.bind(this)}
-            src="https://www.voicebot.net/ImagesCommon/Icons/256x256/VoiceBot.png"
-            size="tiny"
+            src="./client/assets/Images/istock/bot.png"
+            size="small"
             style={{
               // top: "13%",
               left: "-134%"
@@ -82,8 +82,8 @@ class PersonalStylist extends Component {
             <div>
               <Header
                 style={{
-                  marginTop: "-40%",
-                  marginLeft: "-60%",
+                  marginTop: "-50%",
+                  marginLeft: "-50%",
                   fontFamily: "Raleway"
                 }}
               >

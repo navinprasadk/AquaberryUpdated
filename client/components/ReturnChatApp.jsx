@@ -223,10 +223,10 @@ class ReturnChatApp extends React.Component {
                 display: "block"
               }}
             >
-              <Image
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_JMj69CfrZqPz2WtCIzcJSVfQuC79kLOCtIPopmy-l80Oepoe"
+              <Image avatar
+                src='./client/assets/Images/istock/profile.png'
                 floated="right"
-                size="mini"
+                size="massive"
                 alt=""
                 style={{
                   marginLeft: "2%"
@@ -269,22 +269,22 @@ class ReturnChatApp extends React.Component {
                 display: "block"
               }}
             >
-              <Icon
-                name="android"
-                size="large"
+              <Image
+                src='./client/assets/Images/istock/bot.png'
+                size="tiny"
                 alt=""
                 style={{
-                  marginLeft: "0%",
+                  marginLeft: "-7%",
                   marginTop: "-16%"
                 }}
               />
               <Card
                 style={{
-                  borderRadius: "30px",
-                  padding: "0 1%",
-                  margin: "-17% -2.5% 2% 12.5%",
-                  color: "black",
-                  width: "50%"
+                  borderRadius: '30px',
+                  padding: '0 1%',
+                  margin: '-20% -2.5% 2% 13.5%',
+                  color: 'black',
+                  width: '50%'
                 }}
               >
                 <Card.Content>

@@ -201,7 +201,7 @@ class ChatApp extends React.Component {
                     <div style={{
                     display: 'block'
                   }}>
-                  <Image src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_JMj69CfrZqPz2WtCIzcJSVfQuC79kLOCtIPopmy-l80Oepoe' floated='right' size="mini" alt="" style={{
+                  <Image avatar src='./client/assets/Images/istock/profile.png' floated='right' size="massive" alt="" style={{
                       marginLeft: '2%'
                     }}/>
                   <Card style={{
@@ -234,15 +234,18 @@ class ChatApp extends React.Component {
                     <div style={{
                     display: 'block'
                   }}>
-                  <Icon name='android' size="large" alt="" style={{
-                      marginLeft: '0%',marginTop:'-16%'
+                  <Image src='./client/assets/Images/istock/bot.png' size='tiny' style={{
+                      marginLeft: '-7%',marginTop:'-16%'
                     }}/>
+                  {/* <Icon name='android' size="large" alt="" style={{
+                      marginLeft: '0%',marginTop:'-16%'
+                    }}/> */}
                   <Card style={{
-                      borderRadius: '30px',
-                      padding: '0 1%',
-                      margin: '-17% -2.5% 2% 12.5%',
-                      color: 'black',
-                      width: '50%'
+                    borderRadius: '30px',
+                    padding: '0 1%',
+                    margin: '-20% -2.5% 2% 13.5%',
+                    color: 'black',
+                    width: '50%'
                     }}>
                     <Card.Content>
                       <Card.Description style={{
