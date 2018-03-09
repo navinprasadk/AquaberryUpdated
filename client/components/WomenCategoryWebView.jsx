@@ -150,7 +150,7 @@ export default class WomenCategoryWebView extends Component {
               <Grid.Column width={1} />
               <Grid.Column width={7}>
                 <Image
-                  src="./client/assets/Images/istock/172435569.jpg"
+                  src="./client/assets/Images/istock/637824612.jpg"
                   alt=""
                 />
                 <div>
@@ -179,7 +179,7 @@ export default class WomenCategoryWebView extends Component {
               </Grid.Column>
               <Grid.Column width={7}>
                 <Image
-                  src="./client/assets/Images/istock/624226978.jpg"
+                  src="./client/assets/Images/istock/487485155.jpg"
                   alt=""
                 />
                 <div>
@@ -209,7 +209,7 @@ export default class WomenCategoryWebView extends Component {
               <Grid.Column width={1} />
               <Grid.Column width={7}>
                 <Image
-                  src="./client/assets/Images/istock/621114356.jpg"
+                  src="./client/assets/Images/istock/187350666.jpg"
                   alt=""
                 />
                 <div>
@@ -323,7 +323,7 @@ export default class WomenCategoryWebView extends Component {
               <Grid.Column width={1} />
             </Grid.Row>
 
-            <Grid.Row only="mobile">
+            {/* <Grid.Row only="mobile">
               <Grid.Column width={1} />
               <Grid.Column width={7}>
                 <Image
@@ -380,42 +380,7 @@ export default class WomenCategoryWebView extends Component {
                 </div>
               </Grid.Column>
               <Grid.Column width={1} />
-            </Grid.Row>
-
-            {/* <Grid.Row>
-                  <Grid.Column width={1}/>
-                  <Grid.Column width={7}>
-                    <Image src='./client/assets/Images/istock/9.jpg' alt="" />
-                    <div>
-                      <center>
-                        <p className="WomenCategoryWebViewTitle">Grey Textured V-Neck Tunic Jumper</p>
-                      </center>
-                      <center>
-                        <p className="WomenCategoryWebViewPrice">$20.00</p>
-                      </center>
-
-                        <Label size='mini' circular style={{backgroundColor:"#f5f5f5"}} />
-                        <Label size='mini' circular style={{backgroundColor:"#56323E"}} />
-
-                    </div>
-                  </Grid.Column>
-                  <Grid.Column width={7}>
-                    <Image src='./client/assets/Images/BlueJumper.jpg' alt="" />
-                    <div>
-                      <center>
-                        <p className="WomenCategoryWebViewTitle">Blue Button Detail Jumper</p>
-                      </center>
-                      <center>
-                        <p className="WomenCategoryWebViewPrice">$40.00</p>
-                      </center>
-
-                        <Label size='mini' circular style={{backgroundColor:"#E3A269"}} />
-                        <Label size='mini' circular style={{backgroundColor:"#78BDD3"}} />
-                      
-                    </div>
-                  </Grid.Column>
-                  <Grid.Column width={1}/>
-                </Grid.Row> */}
+            </Grid.Row> */}
           </Grid>
         )}
       </div>

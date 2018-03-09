@@ -28,10 +28,7 @@ class AppBar extends Component {
   handleClose() {
     this.setState({open: false});
   }
-  componentDidMount(){
 
-    this.setState({wish:cookies.get('wishlistcount')})
-  }
   render() {
 console.log(this.props.cartDetails);
     return (
