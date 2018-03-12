@@ -149,7 +149,7 @@ export default class MobileAppHome extends React.Component {
                   </center>
                   <Button
                     inverted
-                    style={{ position: "absolute", top: "59%", left: "38%" }}
+                    style={{ position: "absolute", top: "59%", left: "33%", textTransform:'uppercase', letterSpacing:'1px' }}
                   >
                     Shop Now
                   </Button>

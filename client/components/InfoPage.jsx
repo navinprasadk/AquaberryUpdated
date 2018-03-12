@@ -10,10 +10,7 @@ class InfoPage extends Component {
     super();
     this.state={
        activeIndex: 0,
-       color1:'grey',
-       color2:'grey',
-       color3:'grey',
-       color4:'grey'
+  
       }
   }
 
@@ -26,18 +23,7 @@ class InfoPage extends Component {
            })
 
     }
-handlecolor1(){
-  this.setState({color1:'red'})
-}
-handlecolor2(){
-  this.setState({color2:'red'})
-}
-handlecolor3(){
-  this.setState({color3:'red'})
-}
-handlecolor4(){
-  this.setState({color4:'red'})
-}
+
 
   render() {
     const { activeIndex } = this.state;
@@ -69,7 +55,7 @@ handlecolor4(){
                   <Accordion.Content active={activeIndex === 0}>
                     <p>Sia Dress w/ Pockets
                     <br/>
-                    <strong>Colour:</strong> Red
+                    <strong>Color:</strong> Red
                     <br/>
                     <strong>Item Code:</strong>1945688</p>
                     <p>Model wears size S</p>
@@ -108,15 +94,15 @@ handlecolor4(){
                       </Grid.Row> */}
                         <Grid.Row style={{marginTop:"-2%"}}>
                           <Grid.Column width={2}/>
-                          <center><Grid.Column width={1} style={{fontWeight:"bold",fontSize:'14px',fontFamily:'Raleway'}}><Label onClick={this.handlecolor1.bind(this)} color={this.state.color1}>PS</Label></Grid.Column></center>
+                          <center><Grid.Column width={1} style={{fontWeight:"bold",fontSize:'14px',fontFamily:'Raleway'}}><Label  color={this.state.color1}>PS</Label></Grid.Column></center>
                           <Grid.Column width={1}/>
-                        <center><Grid.Column width={1} style={{fontWeight:"bold",fontSize:'14px',fontFamily:'Raleway'}}><Label onClick={this.handlecolor1.bind(this)} color={this.state.color1}>S</Label></Grid.Column></center>
+                        <center><Grid.Column width={1} style={{fontWeight:"bold",fontSize:'14px',fontFamily:'Raleway'}}><Label  color={this.state.color1}>S</Label></Grid.Column></center>
                         <Grid.Column width={1}/>
-                        <center><Grid.Column width={1} style={{fontWeight:"bold",fontSize:'14px',fontFamily:'Raleway'}}><Label onClick={this.handlecolor2.bind(this)} color={this.state.color2}>M</Label></Grid.Column></center>
+                        <center><Grid.Column width={1} style={{fontWeight:"bold",fontSize:'14px',fontFamily:'Raleway'}}><Label  color={this.state.color2}>M</Label></Grid.Column></center>
                         <Grid.Column width={1}/>
-                        <center><Grid.Column width={1} style={{fontWeight:"bold",fontSize:'14px',fontFamily:'Raleway'}}><Label onClick={this.handlecolor3.bind(this)} color={this.state.color3}>M</Label></Grid.Column></center>
+                        <center><Grid.Column width={1} style={{fontWeight:"bold",fontSize:'14px',fontFamily:'Raleway'}}><Label  color={this.state.color3}>L</Label></Grid.Column></center>
                         <Grid.Column width={1}/>
-                        <center><Grid.Column width={1} style={{fontWeight:"bold",fontSize:'14px',fontFamily:'Raleway'}}><Label onClick={this.handlecolor4.bind(this)} color={this.state.color4}>X L</Label></Grid.Column></center>
+                        <center><Grid.Column width={1} style={{fontWeight:"bold",fontSize:'14px',fontFamily:'Raleway'}}><Label  color={this.state.color4}>X L</Label></Grid.Column></center>
                         <Grid.Column width={3}/>
 
                         <Grid.Column width={1}></Grid.Column>

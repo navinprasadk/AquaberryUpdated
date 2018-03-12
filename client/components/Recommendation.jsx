@@ -293,7 +293,7 @@ class Recommendation extends Component {
                       justifyContent: "space-around"
                     }}
                   >
-                    <span>20$</span>
+                    <span>$20</span>
                   </span>
                 </Grid.Column>
               </Grid.Row>
@@ -355,7 +355,7 @@ class Recommendation extends Component {
                       justifyContent: "space-around"
                     }}
                   >
-                    <span>22$</span>
+                    <span>$22</span>
                   </span>
                 </Grid.Column>
               </Grid.Row>
@@ -417,7 +417,7 @@ class Recommendation extends Component {
                       justifyContent: "space-around"
                     }}
                   >
-                    <span>28$</span>
+                    <span>$28</span>
                   </span>
                 </Grid.Column>
               </Grid.Row>
@@ -478,7 +478,7 @@ class Recommendation extends Component {
                       justifyContent: "space-around"
                     }}
                   >
-                    <span>25$</span>
+                    <span>$25</span>
                   </span>
                 </Grid.Column>
               </Grid.Row>
