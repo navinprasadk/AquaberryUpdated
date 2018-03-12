@@ -118,11 +118,10 @@ export default class AppBarWebView extends Component {
               style={{
                 fontSize: "11px",
                 textAlign: "center",
-                // fontWeight: "bold",
                 fontFamily: "Raleway"
               }}
             >
-              To experience our new <span style={{fontWeight:"bold"}}> Virtual Fitting room </span> download the app now
+              To experience our new <span style={{ fontWeight:'bolder' }}> Virtual Fitting room </span> download the app now
             </Grid.Column>
             <Grid.Column width={5}>
               <Button

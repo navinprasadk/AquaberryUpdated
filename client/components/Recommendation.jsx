@@ -67,8 +67,12 @@ class Recommendation extends Component {
     super(props);
     this.state = {
       list: 0,
-      voiceRecommendation:false,
-      Recommended:false
+      voiceRecommendation: false,
+      Recommended: false,
+      emptyHeart: true,
+      emptyHeart1: true,
+      emptyHeart2: true,
+      emptyHeart3: true,
     };
     this.handleWishlist = this.handleWishlist.bind(this);
   }
@@ -77,12 +81,10 @@ class Recommendation extends Component {
       wishlistStatus: true
     });
   }
-  handleVoiceRecommendation(){
-    this.setState({voiceRecommendation:'true'})
+  handleVoiceRecommendation() {
+    this.setState({ voiceRecommendation: "true" });
   }
-  onEnd(){
-
-  }
+  onEnd() {}
   render() {
     var settings = {
       dots: false,
@@ -112,7 +114,6 @@ class Recommendation extends Component {
         onClick={() => this.props.AddtoCart(data[0])}
       />
     );
-
 
     var womanCategory = this.props.cartDetails.women.map((item, key) => {
       var iconComponent = item.checked ? (
@@ -158,7 +159,7 @@ class Recommendation extends Component {
 
         <Grid>
           <Grid.Row>
-            <Grid.Column width={1}/>
+            <Grid.Column width={1} />
             <Grid.Column width={6}>
               <Image
                 circular
@@ -166,34 +167,34 @@ class Recommendation extends Component {
                 src="./client/assets/Images/istock/bot.png"
                 size="small"
                 style={{
-                  top: "20%",
+                  top: "20%"
                   // left: "-134%"
                 }}
               />
             </Grid.Column>
-            <Grid.Column width={9}/>
+            <Grid.Column width={9} />
           </Grid.Row>
-          {this.state.Recommended == true ?
-          <Grid.Row style={{ marginTop: "2%" }}>
-            <Grid.Column width={16}>
-              <Segment
-                style={{
-                  marginTop:'-4%',
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  letterSpacing: "1px",
-                  textTransform: "uppercase",
-                  fontWeight: "bold",
-                  textAlign: "center",
-                  width: "108%",
-                  backgroundColor: "white",
-                  color: "black",
-                  height: "2vh"
-                }}
-              >
-                <center style={{ fontSize: "90%" }}>Recommended items</center>
-                {/* <Image
+          {this.state.Recommended == true ? (
+            <Grid.Row style={{ marginTop: "2%" }}>
+              <Grid.Column width={16}>
+                <Segment
+                  style={{
+                    marginTop: "-4%",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    letterSpacing: "1px",
+                    textTransform: "uppercase",
+                    fontWeight: "bold",
+                    textAlign: "center",
+                    width: "108%",
+                    backgroundColor: "white",
+                    color: "black",
+                    height: "2vh"
+                  }}
+                >
+                  <center style={{ fontSize: "90%" }}>Recommended items</center>
+                  {/* <Image
                   src="./client/assets/Images/flaticon/augmented-realityr.svg"
                   size="mini"
                   style={{
@@ -204,307 +205,396 @@ class Recommendation extends Component {
                     left: "84%"
                   }}
                 /> */}
-              </Segment>
-            </Grid.Column>
-          </Grid.Row> : null }
+                </Segment>
+              </Grid.Column>
+            </Grid.Row>
+          ) : null}
         </Grid>
-        {this.state.Recommended == true ?
-        <Grid centered columns={2}>
-          <Grid.Row only="mobile" style={{ marginTop: "4%" }}>
-            {womanCategory}
-          </Grid.Row>
-        </Grid> : null }
-        {this.state.Recommended == true ?
-        <Grid>
-          <Grid.Row style={{ marginBottom: "3%" }}>
-            <Grid.Column width={16}>
-              <center
-                style={{
-                  letterSpacing: "3px",
-                  textTransform: "capitalise",
-                  fontWeight: "bold",
-                  fontFamily: "Raleway"
-                }}
-              >
-                Style it with...
-              </center>
-            </Grid.Column>
-          </Grid.Row>
-        </Grid> : null }
-        {this.state.Recommended == true ?
-        <Slider {...styleCarouselSettings}>
-          <Grid style={{ marginTop: "0%" }}>
-            <Grid.Row>
-              <Grid.Column width={1} />
-              {/* <img src='./client/assets/Images/istock/622809430ss.jpg' /> */}
-              <Grid.Column
-                width={15}
-                style={{ display: "flex", flexDirection: "column" }}
-              >
-                <Image
-                  className="card_Promotions_Carousel"
-                  size="large"
-                  style={{ borderRadius: "10%", height: "100%" }}
-                  src="/client/assets/Images/istock/171301947.jpg"
-                />
-                <Icon
-                  name="empty heart"
-                  style={{ position: "absolute", top: "8px", right: "16px" }}
-                  size="large"
-                  color="red"
-                  // onClick={() => }
-                />
-
-                <span style={{ marginTop: "4%", textTransform: "capitalise" }}>
-                  <center>
-                    <h5 style={{ fontFamily: "Raleway", fontSize: "90%" }}>
-                      Tan Peep Toe Heels
-                    </h5>
-                  </center>
-                </span>
-                <span
+        {this.state.Recommended == true ? (
+          <Grid centered columns={2}>
+            <Grid.Row only="mobile" style={{ marginTop: "4%" }}>
+              {womanCategory}
+            </Grid.Row>
+          </Grid>
+        ) : null}
+        {this.state.Recommended == true ? (
+          <Grid>
+            <Grid.Row style={{ marginBottom: "3%" }}>
+              <Grid.Column width={16}>
+                <center
                   style={{
-                    display: "flex",
-                    flexDirection: "row",
-                    justifyContent: "space-around"
+                    letterSpacing: "3px",
+                    textTransform: "capitalise",
+                    fontWeight: "bold",
+                    fontFamily: "Raleway"
                   }}
                 >
-                  <span>20$</span>
-                </span>
+                  Style it with...
+                </center>
               </Grid.Column>
             </Grid.Row>
           </Grid>
+        ) : null}
+        {this.state.Recommended == true ? (
+          <Slider {...styleCarouselSettings}>
+            <Grid style={{ marginTop: "0%" }}>
+              <Grid.Row>
+                <Grid.Column width={1} />
+                {/* <img src='./client/assets/Images/istock/622809430ss.jpg' /> */}
+                <Grid.Column
+                  width={15}
+                  style={{ display: "flex", flexDirection: "column" }}
+                >
+                  <Image
+                    className="card_Promotions_Carousel"
+                    size="large"
+                    style={{ borderRadius: "10%", height: "100%" }}
+                    src="/client/assets/Images/istock/171301947.jpg"
+                  />
+                  {this.state.emptyHeart ? (
+                    <Icon
+                      name="empty heart"
+                      style={{
+                        position: "absolute",
+                        top: "8px",
+                        right: "16px"
+                      }}
+                      size="large"
+                      color="red"
+                      onClick={() => this.setState({ emptyHeart: false })}
+                    />
+                  ) : (
+                    <Icon
+                      name="heart"
+                      style={{
+                        position: "absolute",
+                        top: "8px",
+                        right: "16px"
+                      }}
+                      size="large"
+                      color="red"
+                      onClick={() => this.setState({ emptyHeart: true })}
+                    />
+                  )}
 
-          <Grid style={{ marginTop: "0%" }}>
-            <Grid.Row>
-              <Grid.Column width={1} />
-              {/* <img src='./client/assets/Images/istock/622809430ss.jpg' /> */}
-              <Grid.Column
-                width={15}
-                style={{ display: "flex", flexDirection: "column" }}
-              >
-                <Image
-                  className="card_Promotions_Carousel"
-                  size="large"
-                  style={{ borderRadius: "10%", height: "100%" }}
-                  src="/client/assets/Images/istock/185245429.jpg"
-                />
-                <Icon
-                  name="empty heart"
-                  style={{ position: "absolute", top: "8px", right: "16px" }}
-                  size="large"
-                  color="red"
-                  // onClick={() => }
-                />
-                <span style={{ marginTop: "4%", textTransform: "capitalise" }}>
-                  <center>
-                    <h5 style={{ fontFamily: "Raleway", fontSize: "90%" }}>
-                      Beige Peep Toe w/ Pink Heels
-                    </h5>
-                  </center>
-                </span>
-                <span
+                  <span
+                    style={{ marginTop: "4%", textTransform: "capitalise" }}
+                  >
+                    <center>
+                      <h5 style={{ fontFamily: "Raleway", fontSize: "90%" }}>
+                        Tan Peep Toe Heels
+                      </h5>
+                    </center>
+                  </span>
+                  <span
+                    style={{
+                      display: "flex",
+                      flexDirection: "row",
+                      justifyContent: "space-around"
+                    }}
+                  >
+                    <span>20$</span>
+                  </span>
+                </Grid.Column>
+              </Grid.Row>
+            </Grid>
+
+            <Grid style={{ marginTop: "0%" }}>
+              <Grid.Row>
+                <Grid.Column width={1} />
+                {/* <img src='./client/assets/Images/istock/622809430ss.jpg' /> */}
+                <Grid.Column
+                  width={15}
+                  style={{ display: "flex", flexDirection: "column" }}
+                >
+                  <Image
+                    className="card_Promotions_Carousel"
+                    size="large"
+                    style={{ borderRadius: "10%", height: "100%" }}
+                    src="/client/assets/Images/istock/185245429.jpg"
+                  />
+                  {this.state.emptyHeart1 ? (
+                    <Icon
+                      name="empty heart"
+                      style={{
+                        position: "absolute",
+                        top: "8px",
+                        right: "16px"
+                      }}
+                      size="large"
+                      color="red"
+                      onClick={() => this.setState({ emptyHeart1: false })}
+                    />
+                  ) : (
+                    <Icon
+                      name="heart"
+                      style={{
+                        position: "absolute",
+                        top: "8px",
+                        right: "16px"
+                      }}
+                      size="large"
+                      color="red"
+                      onClick={() => this.setState({ emptyHeart1: true })}
+                    />
+                  )}
+
+                  <span
+                    style={{ marginTop: "4%", textTransform: "capitalise" }}
+                  >
+                    <center>
+                      <h5 style={{ fontFamily: "Raleway", fontSize: "90%" }}>
+                        Beige Peep Toe w/ Pink Heels
+                      </h5>
+                    </center>
+                  </span>
+                  <span
+                    style={{
+                      display: "flex",
+                      flexDirection: "row",
+                      justifyContent: "space-around"
+                    }}
+                  >
+                    <span>22$</span>
+                  </span>
+                </Grid.Column>
+              </Grid.Row>
+            </Grid>
+
+            <Grid style={{ marginTop: "0%" }}>
+              <Grid.Row>
+                <Grid.Column width={1} />
+                {/* <img src='./client/assets/Images/istock/622809430ss.jpg' /> */}
+                <Grid.Column
+                  width={15}
+                  style={{ display: "flex", flexDirection: "column" }}
+                >
+                  <Image
+                    className="card_Promotions_Carousel"
+                    size="large"
+                    style={{ borderRadius: "10%", height: "100%" }}
+                    src="/client/assets/Images/istock/469138016.jpg"
+                  />
+                  {this.state.emptyHeart2 ? (
+                    <Icon
+                      name="empty heart"
+                      style={{
+                        position: "absolute",
+                        top: "8px",
+                        right: "16px"
+                      }}
+                      size="large"
+                      color="red"
+                      onClick={() => this.setState({ emptyHeart2: false })}
+                    />
+                  ) : (
+                    <Icon
+                      name="heart"
+                      style={{
+                        position: "absolute",
+                        top: "8px",
+                        right: "16px"
+                      }}
+                      size="large"
+                      color="red"
+                      onClick={() => this.setState({ emptyHeart2: true })}
+                    />
+                  )}
+
+                  <span
+                    style={{ marginTop: "4%", textTransform: "capitalise" }}
+                  >
+                    <center>
+                      <h5 style={{ fontFamily: "Raleway", fontSize: "90%" }}>
+                        Claasic Black Closed Heels
+                      </h5>
+                    </center>
+                  </span>
+                  <span
+                    style={{
+                      display: "flex",
+                      flexDirection: "row",
+                      justifyContent: "space-around"
+                    }}
+                  >
+                    <span>28$</span>
+                  </span>
+                </Grid.Column>
+              </Grid.Row>
+            </Grid>
+
+            <Grid style={{ marginTop: "0%" }}>
+              <Grid.Row>
+                <Grid.Column width={1} />
+                {/* <img src='./client/assets/Images/istock/622809430ss.jpg' /> */}
+                <Grid.Column
+                  width={15}
+                  style={{ display: "flex", flexDirection: "column" }}
+                >
+                  <Image
+                    className="card_Promotions_Carousel"
+                    size="large"
+                    style={{ borderRadius: "10%", height: "100%" }}
+                    src="/client/assets/Images/istock/453681153.jpg"
+                  />{" "}
+                  {this.state.emptyHeart3 ? (
+                    <Icon
+                      name="empty heart"
+                      style={{
+                        position: "absolute",
+                        top: "8px",
+                        right: "16px"
+                      }}
+                      size="large"
+                      color="red"
+                      onClick={() => this.setState({ emptyHeart3: false })}
+                    />
+                  ) : (
+                    <Icon
+                      name="heart"
+                      style={{
+                        position: "absolute",
+                        top: "8px",
+                        right: "16px"
+                      }}
+                      size="large"
+                      color="red"
+                      onClick={() => this.setState({ emptyHeart3: true })}
+                    />
+                  )}
+                  <span
+                    style={{ marginTop: "4%", textTransform: "capitalise" }}
+                  >
+                    <center>
+                      <h5 style={{ fontFamily: "Raleway", fontSize: "90%" }}>
+                        Red Peep Toe Heels
+                      </h5>
+                    </center>
+                  </span>
+                  <span
+                    style={{
+                      display: "flex",
+                      flexDirection: "row",
+                      justifyContent: "space-around"
+                    }}
+                  >
+                    <span>25$</span>
+                  </span>
+                </Grid.Column>
+              </Grid.Row>
+            </Grid>
+          </Slider>
+        ) : null}
+        {this.state.Recommended == true ? (
+          <Grid>
+            <Grid.Row style={{ marginTop: "6%", marginBottom: "3%" }}>
+              <Grid.Column width={16}>
+                <center
                   style={{
-                    display: "flex",
-                    flexDirection: "row",
-                    justifyContent: "space-around"
+                    letterSpacing: "3px",
+                    textTransform: "capitalise",
+                    fontWeight: "bold",
+                    fontFamily: "Lily Script One",
+                    fontSize: "15px"
                   }}
                 >
-                  <span>22$</span>
-                </span>
+                  Celebrities Fashion
+                </center>
               </Grid.Column>
             </Grid.Row>
           </Grid>
+        ) : null}
+        {this.state.Recommended == true ? (
+          <Slider {...settings}>
+            <Grid style={{ marginTop: "0%", marginBottom: "3%" }}>
+              <Grid.Row>
+                <Grid.Column width={1} />
+                {/* <img src='./client/assets/Images/istock/622809430ss.jpg' /> */}
+                <Grid.Column
+                  width={15}
+                  style={{ display: "flex", flexDirection: "column" }}
+                >
+                  <Image
+                    className="card_Promotions_Carousel"
+                    size="medium"
+                    style={{ borderRadius: "2%", height: "100%" }}
+                    src="/client/assets/Images/istock/514514983.jpg"
+                  />
+                </Grid.Column>
+              </Grid.Row>
+            </Grid>
 
-          <Grid style={{ marginTop: "0%" }}>
-            <Grid.Row>
-              <Grid.Column width={1} />
-              {/* <img src='./client/assets/Images/istock/622809430ss.jpg' /> */}
+            <Grid style={{ marginTop: "0%", marginBottom: "3%" }}>
+              <Grid.Row>
+                <Grid.Column width={1} />
+                {/* <img src='./client/assets/Images/istock/622809430ss.jpg' /> */}
+                <Grid.Column
+                  width={15}
+                  style={{ display: "flex", flexDirection: "column" }}
+                >
+                  <Image
+                    className="card_Promotions_Carousel"
+                    size="medium"
+                    style={{ borderRadius: "2%", height: "100%" }}
+                    src="/client/assets/Images/istock/611899104.jpg"
+                  />
+                </Grid.Column>
+              </Grid.Row>
+            </Grid>
+
+            <Grid style={{ marginTop: "0%", marginBottom: "3%" }}>
+              <Grid.Row>
+                <Grid.Column width={1} />
+                {/* <img src='./client/assets/Images/istock/622809430ss.jpg' /> */}
+                <Grid.Column
+                  width={15}
+                  style={{ display: "flex", flexDirection: "column" }}
+                >
+                  <Image
+                    className="card_Promotions_Carousel"
+                    size="medium"
+                    style={{ borderRadius: "2%", height: "100%" }}
+                    src="/client/assets/Images/istock/184911935.jpg"
+                  />
+                </Grid.Column>
+              </Grid.Row>
+            </Grid>
+          </Slider>
+        ) : null}
+        {this.state.Recommended == true ? (
+          <Grid>
+            <Grid.Row style={{ width: "100%" }}>
+              {/* <Grid.Column width={1}/> */}
               <Grid.Column
-                width={15}
-                style={{ display: "flex", flexDirection: "column" }}
+                width={16}
+                style={{ position: "fixed", zIndex: "100", bottom: 0 }}
               >
-                <Image
-                  className="card_Promotions_Carousel"
-                  size="large"
-                  style={{ borderRadius: "10%", height: "100%" }}
-                  src="/client/assets/Images/istock/469138016.jpg"
-                />
-                <Icon
-                  name="empty heart"
-                  style={{ position: "absolute", top: "8px", right: "16px" }}
-                  size="large"
-                  color="red"
-                  // onClick={() => }
-                />
-                <span style={{ marginTop: "4%", textTransform: "capitalise" }}>
-                  <center>
-                    <h5 style={{ fontFamily: "Raleway", fontSize: "90%" }}>
-                      Claasic Black Closed Heels
-                    </h5>
-                  </center>
-                </span>
-                <span
+                <Segment
                   style={{
-                    display: "flex",
-                    flexDirection: "row",
-                    justifyContent: "space-around"
+                    backgroundColor: "#ed6a07",
+                    color: "white",
+                    width: "110%"
                   }}
                 >
-                  <span>28$</span>
-                </span>
+                  <center>Promo offer Buy 3 Get 30% Off. Only for you</center>
+                </Segment>
               </Grid.Column>
+              {/* <Grid.Column width={1}/> */}
             </Grid.Row>
           </Grid>
-
-          <Grid style={{ marginTop: "0%" }}>
-            <Grid.Row>
-              <Grid.Column width={1} />
-              {/* <img src='./client/assets/Images/istock/622809430ss.jpg' /> */}
-              <Grid.Column
-                width={15}
-                style={{ display: "flex", flexDirection: "column" }}
-              >
-                <Image
-                  className="card_Promotions_Carousel"
-                  size="large"
-                  style={{ borderRadius: "10%", height: "100%" }}
-                  src="/client/assets/Images/istock/453681153.jpg"
-                />
-                <Icon
-                  name="empty heart"
-                  style={{ position: "absolute", top: "8px", right: "16px" }}
-                  size="large"
-                  color="red"
-                  // onClick={() => }
-                />
-                <span style={{ marginTop: "4%", textTransform: "capitalise" }}>
-                  <center>
-                    <h5 style={{ fontFamily: "Raleway", fontSize: "90%" }}>
-                      Red Peep Toe Heels
-                    </h5>
-                  </center>
-                </span>
-                <span
-                  style={{
-                    display: "flex",
-                    flexDirection: "row",
-                    justifyContent: "space-around"
-                  }}
-                >
-                  <span>25$</span>
-                </span>
-              </Grid.Column>
-            </Grid.Row>
-          </Grid>
-        </Slider> : null }
-        {this.state.Recommended == true ?
-        <Grid>
-          <Grid.Row style={{ marginTop: "6%", marginBottom: "3%" }}>
-            <Grid.Column width={16}>
-              <center
-                style={{
-                  letterSpacing: "3px",
-                  textTransform: "capitalise",
-                  fontWeight: "bold",
-                  fontFamily: "Lily Script One",
-                  fontSize: "15px"
-                }}
-              >
-                Celebrities Fashion
-              </center>
-            </Grid.Column>
-          </Grid.Row>
-        </Grid> : null }
-        {this.state.Recommended == true ?
-        <Slider {...settings}>
-          <Grid style={{ marginTop: "0%", marginBottom: "3%" }}>
-            <Grid.Row>
-              <Grid.Column width={1} />
-              {/* <img src='./client/assets/Images/istock/622809430ss.jpg' /> */}
-              <Grid.Column
-                width={15}
-                style={{ display: "flex", flexDirection: "column" }}
-              >
-                <Image
-                  className="card_Promotions_Carousel"
-                  size="medium"
-                  style={{ borderRadius: "2%", height: "100%" }}
-                  src="/client/assets/Images/istock/514514983.jpg"
-                />
-              </Grid.Column>
-            </Grid.Row>
-          </Grid>
-
-          <Grid style={{ marginTop: "0%", marginBottom: "3%" }}>
-            <Grid.Row>
-              <Grid.Column width={1} />
-              {/* <img src='./client/assets/Images/istock/622809430ss.jpg' /> */}
-              <Grid.Column
-                width={15}
-                style={{ display: "flex", flexDirection: "column" }}
-              >
-                <Image
-                  className="card_Promotions_Carousel"
-                  size="medium"
-                  style={{ borderRadius: "2%", height: "100%" }}
-                  src="/client/assets/Images/istock/611899104.jpg"
-                />
-              </Grid.Column>
-            </Grid.Row>
-          </Grid>
-
-          <Grid style={{ marginTop: "0%", marginBottom: "3%" }}>
-            <Grid.Row>
-              <Grid.Column width={1} />
-              {/* <img src='./client/assets/Images/istock/622809430ss.jpg' /> */}
-              <Grid.Column
-                width={15}
-                style={{ display: "flex", flexDirection: "column" }}
-              >
-                <Image
-                  className="card_Promotions_Carousel"
-                  size="medium"
-                  style={{ borderRadius: "2%", height: "100%" }}
-                  src="/client/assets/Images/istock/184911935.jpg"
-                />
-              </Grid.Column>
-            </Grid.Row>
-          </Grid>
-        </Slider> : null }
-        {this.state.Recommended == true ?
-        <Grid>
-          <Grid.Row style={{ width: "100%" }}>
-            {/* <Grid.Column width={1}/> */}
-            <Grid.Column
-              width={16}
-              style={{ position: "fixed", zIndex: "100", bottom: 0 }}
-            >
-              <Segment
-                style={{
-                  backgroundColor: "#ed6a07",
-                  color: "white",
-                  width: "110%"
-                }}
-              >
-                <center>Promo offer Buy 3 Get 30% Off. Only for you</center>
-              </Segment>
-            </Grid.Column>
-            {/* <Grid.Column width={1}/> */}
-          </Grid.Row>
-        </Grid>
-        : null }
+        ) : null}
         {this.state.voiceRecommendation && (
-          <VoicePlayer play text="Here Are some Recommended items based on your preferences"
-          onEnd={() => {
-            this.setState({
-              Recommended: true,
-              voiceRecommendation:false
-            })
-          }}
-        />
-        )
-        }
+          <VoicePlayer
+            play
+            text="Here Are some Recommended items based on your preferences"
+            onEnd={() => {
+              this.setState({
+                Recommended: true,
+                voiceRecommendation: false
+              });
+            }}
+          />
+        )}
       </div>
     );
   }
