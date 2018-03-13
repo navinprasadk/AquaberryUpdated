@@ -109,7 +109,7 @@ export default class PromotionsCheckout extends Component {
                                             <Image size='tiny' style={{ borderRadius: "10%", height: '100%' }} src='/client/assets/Images/istock/686261786ss.jpg' />
                                     <p style={{ marginLeft: "3%" }}>
                                                 <h4 className="darkText" >Blue Top with black slipper & handbag</h4>
-                                        <p className="greyText" style={{ display: "flex", flexDirection: "row", justifyContent: "space-between", fontSize: "90%", color: "#9E9E9E" }}><span><Header>85$</Header></span>   <span><span style={{ fontWeight: "bold" }}>Quantity</span> 3 Items</span> </p>
+                                        <p className="greyText" style={{ display: "flex", flexDirection: "row", justifyContent: "space-between", fontSize: "90%", color: "#9E9E9E" }}><span><Header>$85</Header></span>   <span><span style={{ fontWeight: "bold" }}>Quantity</span> 3 Items</span> </p>
                                         <p style={{leeterSpacing:"1px"}}><Icon color="orange" name="dot circle outline" />Processing</p>
                                     </p>
                                 </Grid.Column>
@@ -134,7 +134,7 @@ export default class PromotionsCheckout extends Component {
                             <Grid.Row only='mobile' >
                                 <Grid.Column width={1} />
                                 <Grid.Column width={14}>
-                                    <center><h4 style={{ fontFamily:'Raleway'}}> Balance amount in your digi wallet is <h3>37$</h3> </h4></center>
+                                    <center><h4 style={{ fontFamily:'Raleway'}}> Balance amount in your digi wallet is <h3>$37</h3> </h4></center>
                                 </Grid.Column>
                                 <Grid.Column width={1} />
                             </Grid.Row>

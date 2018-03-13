@@ -75,9 +75,9 @@ import AppBar from "./AppBar.jsx";
                     justifyContent: "space-around"
                   }}
                 >
-                  <span style={{ textDecoration: "line-through" }}>20$</span>
+                  <span style={{ textDecoration: "line-through" }}>$20</span>
                   <span>
-                    <span style={{ color: "green" }}>16$</span> for you
+                    <span style={{ color: "green" }}>$16</span> for you
                   </span>
                 </span>
               </Grid.Column>
@@ -112,9 +112,9 @@ import AppBar from "./AppBar.jsx";
                     justifyContent: "space-around"
                   }}
                 >
-                  <span style={{ textDecoration: "line-through" }}>22$</span>
+                  <span style={{ textDecoration: "line-through" }}>$22</span>
                   <span>
-                    <span style={{ color: "green" }}>19$</span> for you
+                    <span style={{ color: "green" }}>$19</span> for you
                   </span>
                 </span>
               </Grid.Column>
@@ -149,9 +149,9 @@ import AppBar from "./AppBar.jsx";
                     justifyContent: "space-around"
                   }}
                 >
-                  <span style={{ textDecoration: "line-through" }}>28$</span>
+                  <span style={{ textDecoration: "line-through" }}>$28</span>
                   <span>
-                    <span style={{ color: "green" }}>22$</span> for you
+                    <span style={{ color: "green" }}>$22</span> for you
                   </span>
                 </span>
               </Grid.Column>
@@ -186,9 +186,9 @@ import AppBar from "./AppBar.jsx";
                     justifyContent: "space-around"
                   }}
                 >
-                  <span style={{ textDecoration: "line-through" }}>25$</span>
+                  <span style={{ textDecoration: "line-through" }}>$25</span>
                   <span>
-                    <span style={{ color: "green" }}>20$</span> for you
+                    <span style={{ color: "green" }}>$20</span> for you
                   </span>
                 </span>
               </Grid.Column>
@@ -284,7 +284,7 @@ import AppBar from "./AppBar.jsx";
             <Grid.Column width={7}>
               <center style={{ fontWeight: "bold" }}>
                 <h4>
-                  Combo Price <span style={{ color: "green" }}> 75$ </span>
+                  Combo Price <span style={{ color: "green" }}> $85 </span>
                 </h4>
               </center>
             </Grid.Column>
@@ -366,7 +366,7 @@ import AppBar from "./AppBar.jsx";
                   }}
                 >
                   <span style={{}}>
-                    <b>27$</b>
+                    <b>$27</b>
                   </span>
                   {/* <span><span style={{ color: 'green' }}>16$</span> for you</span> */}
                 </span>
@@ -401,7 +401,7 @@ import AppBar from "./AppBar.jsx";
                   }}
                 >
                   <span style={{}}>
-                    <b>28$</b>
+                    <b>$28</b>
                   </span>
                   {/* <span><span style={{ color: 'green' }}>19$</span> for you</span> */}
                 </span>
@@ -436,7 +436,7 @@ import AppBar from "./AppBar.jsx";
                   }}
                 >
                   <span style={{}}>
-                    <b>22$</b>
+                    <b>$22</b>
                   </span>
                   {/* <span><span style={{ color: 'green' }}>22$</span> for you</span> */}
                 </span>
@@ -471,7 +471,7 @@ import AppBar from "./AppBar.jsx";
                   }}
                 >
                   <span style={{}}>
-                    <b>19$</b>
+                    <b>$19</b>
                   </span>
                   {/* <span><span style={{ color: 'green' }}>20$</span> for you</span> */}
                 </span>

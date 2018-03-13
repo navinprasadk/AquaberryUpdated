@@ -74,7 +74,7 @@ render(){
       marginBottom:'19%'
     }
     // console.log('wish',this.state.wishList);
-    var button_component=(<Link to='/infoPage'><Button className='buttonBackground' style={{ fontFamily:'Raleway', letterSpacing:"2px", boxShadow: "5px 10px 18px #eee", color:"white"}} fluid  size='big' >ADD TO BAG</Button></Link>);
+    var button_component=(<Link to='/infoPage'><Button className='buttonBackground' style={{ fontFamily:'Raleway', letterSpacing:"2px", boxShadow: "5px 10px 18px #eee", color:"white"}} fluid  size='large' >ADD TO BAG</Button></Link>);
     // if(cookies.get('flag')==1){
     //   button_component = (<Button style={{fontFamily:'Source Sans Pro, sans-serif'}} fluid color='green' size='big'>ADDED</Button>)
     // }

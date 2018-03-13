@@ -75,10 +75,12 @@ class ShopWithShape extends Component {
     var frontview = (
       <div>
         <center
+          className="greyText"
           style={{
             fontFamily: "Raleway",
-            fontSize: "18px",
-            fontWeight: "bold"
+            fontSize: "90%",
+            fontWeight: "bold",
+            textTransform: "uppercase"
           }}
         >
           Front View
@@ -91,6 +93,7 @@ class ShopWithShape extends Component {
     var frontupload = (
       <div>
         <center
+          // className="greyText"
           style={{
             fontFamily: "Raleway",
             fontSize: "18px",
@@ -105,10 +108,12 @@ class ShopWithShape extends Component {
     var sideview = (
       <div>
         <center
+          className="greyText"
           style={{
             fontFamily: "Raleway",
-            fontSize: "18px",
-            fontWeight: "bold"
+            fontSize: "90%",
+            fontWeight: "bold",
+            textTransform: "uppercase"
           }}
         >
           Side View
@@ -141,18 +146,16 @@ class ShopWithShape extends Component {
                 <Grid.Column width={1} />
                 <Grid.Column width={14} style={{ fontFamily: "Raleway" }}>
                   <Header style={{ color: "white", fontFamily: "Raleway" }}>
-                    <center>
-                      Best Fit size is{" "}
-                      <spam
-                        style={{
-                          fontFamily: "Raleway",
-                          fontSize: "18px",
-                          fontWeight: "bold"
-                        }}
-                      >
-                        Regular SMALL
-                      </spam>
-                    </center>
+                    Best Fit size is{" "}
+                    <span
+                      style={{
+                        fontFamily: "Raleway",
+                        // fontSize: "18px",
+                        fontWeight: "bold"
+                      }}
+                    >
+                      Regular Small
+                    </span>
                   </Header>
                 </Grid.Column>
                 <Grid.Column width={1} />
@@ -162,24 +165,36 @@ class ShopWithShape extends Component {
           <Modal.Actions>
             <Grid>
               <Grid.Row>
-                <Grid.Column width={3} />
-                <Grid.Column width={11}>
+                <Grid.Column width={1} />
+                <Grid.Column width={5}>
                   <Link to="/modifysize">
-                    <Button color="orange" inverted>
+                    <Button
+                      style={{
+                        // backgroundColor: "#df4b37",
+                        // color: "white",
+                        letterSpacing: "2px"
+                      }}
+                    >
                       Modify
                     </Button>
                   </Link>
+                </Grid.Column>
+                <Grid.Column width={1} />
+                <Grid.Column width={6}>
                   <Link to="/personalstylist/true/true/true/true/true/true">
-                    <Button
-                      color="orange"
-                      inverted
+                    <Button color='green'
+                      style={{
+                        // backgroundColor: '#8BC34A',
+                        color: "white",
+                        letterSpacing: "2px"
+                      }}
                       onClick={() => this.props.handleSize("small")}
                     >
-                      OK
+                      Proceed
                     </Button>
                   </Link>
                 </Grid.Column>
-                <Grid.Column width={2} />
+                <Grid.Column width={1} />
               </Grid.Row>
             </Grid>
           </Modal.Actions>
@@ -226,19 +241,22 @@ class ShopWithShape extends Component {
 
         <Grid>
           <Grid.Row>
-            <Grid.Column width={4} />
+            <Grid.Column width={3} />
             <Grid.Column
-              width={8}
+              width={10}
               style={{
                 fontFamily: "Raleway",
-                fontSize: "18px",
+                // fontSize: "18px",
                 fontWeight: "bold",
-                marginTop: "5%"
+                marginTop: "5%",
+                textTransform: "uppercase"
               }}
             >
-              Capture Your Image
+              <center>
+                <h3>Capture Your Image</h3>
+              </center>
             </Grid.Column>
-            <Grid.Column width={4} />
+            <Grid.Column width={3} />
           </Grid.Row>
           <Grid.Row>
             <Grid.Column width={1} />
@@ -250,12 +268,24 @@ class ShopWithShape extends Component {
             </Grid.Column>
             <Grid.Column width={1} />
           </Grid.Row>
-          <Grid.Row style={{ marginTop: "20%" }}>
-            <Grid.Column width={6} />
-            <Grid.Column width={4}>
-              <Button onClick={this.handlesubmit.bind(this)}>Submit</Button>
+          <Grid.Row style={{ marginTop: "20%", marginBottom: "10%" }}>
+            <Grid.Column width={4} />
+            <Grid.Column width={8}>
+              <Button
+                fluid
+                className="submit_shopWithShape"
+                onClick={this.handlesubmit.bind(this)}
+                style={{
+                  letterSpacing: "3px",
+                  color: "white",
+                  textTransform: "uppercase"
+                  // boxShadow: "7px 16px 24px #eee"
+                }}
+              >
+                Submit
+              </Button>
             </Grid.Column>
-            <Grid.Column width={6} />
+            <Grid.Column width={4} />
           </Grid.Row>
         </Grid>
       </div>

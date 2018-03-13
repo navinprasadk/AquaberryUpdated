@@ -143,7 +143,7 @@ export default class Inventory extends Component {
                   fluid="fluid"
                   type="number"
                   class="inputMaxLength"
-                  placeholder="90001"
+                  placeholder="Enter your ZIP Code"
                   onChange={this.handlechange.bind(this)}
                   disabled={this.state.disableZipCode}
                 />

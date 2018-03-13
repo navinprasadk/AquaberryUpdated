@@ -7,11 +7,11 @@ module.exports = {
       path:__dirname+'/',
       filename: 'bundle.js',
    },
-   // devtool: "source-map", // cheap-source-map will not work with UglifyJsPlugin
-   // devServer: {
-   //    inline: true,
-   //    port: 3000
-   //  },
+  //  devtool: "source-map", // cheap-source-map will not work with UglifyJsPlugin
+   devServer: {
+      inline: true,
+      port: 3000
+    },
 
    module: {
       loaders: [
