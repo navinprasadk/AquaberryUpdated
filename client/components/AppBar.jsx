@@ -41,7 +41,7 @@ console.log(this.props.cartDetails);
              <Icon name="bars" size="large" onClick={this.handleToggle.bind(this)} style={{color:'white'}}/>
            </Menu.Item>
            <Link to='/mHome' >
-           <Menu.Item style={{display:'flux',}}>
+           <Menu.Item style={{display:'flux'}}>
              <Image size='small' src='./client/assets/Images/istock/aquaberry1.png'/>
              {/* <span id="titleText" style={{fontWeight:'normal', letterSpacing:'3px', textTransform:'capitalize', color:"white", float:"left", fontSize:'165%'}}>Aquaberry</span> */}
            </Menu.Item>
@@ -55,7 +55,7 @@ console.log(this.props.cartDetails);
                       </Link>
                       {/* <Link to='/cart'> */}
 
-                      <Menu.Item style={{marginTop:'-5%',marginLeft:'-19%'}}>
+                      <Menu.Item style={{marginTop:'-7%',marginLeft:'-19%'}}>
                         <Icon name='shopping cart' size='large' style={{color:'white',marginTop:'25%'}}/>
 
                  <Label color='red' style={{marginTop:'-10%',marginLeft:'-21%'}} circular>{this.props.cartDetails.cartCount}</Label>
