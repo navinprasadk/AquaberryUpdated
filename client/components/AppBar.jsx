@@ -81,31 +81,14 @@ class AppBar extends Component {
                   </Link>
                   {/* <Link to='/cart'> */}
 
-        <Grid >
-     <Grid.Row only='mobile'>
-       <Grid.Column width={16}>
-         <Menu secondary style={{position:'fixed',zIndex:'100',width:'102%',backgroundColor:'#DF4B37',height:'8vh'}}>
-           <Menu.Item>
-             <Icon name="bars" size="large" onClick={this.handleToggle.bind(this)} style={{color:'white'}}/>
-           </Menu.Item>
-           <Link to='/mHome' >
-           <Menu.Item style={{display:'flux'}}>
-             <Image size='small' src='./client/assets/Images/istock/aquaberry1.png'/>
-             {/* <span id="titleText" style={{fontWeight:'normal', letterSpacing:'3px', textTransform:'capitalize', color:"white", float:"left", fontSize:'165%'}}>Aquaberry</span> */}
-           </Menu.Item>
-           </Link>
-           <Menu.Menu position='right'>
-             <Link to='/wishList'>
-                      <Menu.Item style={{marginTop:'6%'}}>
-                        <Icon name='empty heart' size='large' style={{color:'white',marginTop:'2%'}}/>
-                 <Label color='red' style={{marginTop:'-37%',marginLeft:'-29%'}} circular>{this.props.cartDetails.count}</Label>
-                      </Menu.Item>
-                      </Link>
-                      {/* <Link to='/cart'> */}
-
                       <Menu.Item style={{marginTop:'-7%',marginLeft:'-19%'}}>
                         <Icon name='shopping cart' size='large' style={{color:'white',marginTop:'25%'}}/>
-
+                      </Menu.Item>
+                      </Menu.Menu>
+                    </Menu>
+                    </Grid.Column>
+                  </Grid.Row>
+                </Grid>
         <Drawer
           docked={false}
           width={250}
