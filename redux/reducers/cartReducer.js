@@ -7,8 +7,8 @@ module.exports = (
     count: 0,
     women: [
       {
-        imgurl: "./client/assets/Images/Newistock/recommended/Items/iStock-175505251.jpg",
-        name: "Mia Blue Dress w/ Polka Dots",
+        imgurl: "./client/assets/Images/Newistock/recommended/Items/iStock-149005145.jpg",
+        name: "Mia Beige Dress w/  White Top",
         price: "$24.00",
         checked: false
       },

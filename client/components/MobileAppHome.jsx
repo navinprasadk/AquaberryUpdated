@@ -171,18 +171,18 @@ export default class MobileAppHome extends React.Component {
               >
 
                   <Grid.Column width={8} style={{backgroundColor:'#f4b486'}}>
-                    <center style={{marginTop:'50%'}}>
-                      <span style={{color:'black',fontFamily:'Raleway',fontWeight:'bold',fontSize:'20px',letterSpacing: "2px",}}>
+                    <center style={{marginTop:'40%',marginLeft:"3%"}}>
+                      <span style={{color:'white',fontFamily:'Raleway',fontWeight:'bold',fontSize:'20px',letterSpacing: "2px",}}>
                         NEW SEASON TOPS
                       </span>
                     </center>
-                    <center style={{marginTop:"5%"}}>
-                      <span style={{color:'black',fontFamily:'Raleway',fontWeight:'bold',fontSize:'18px',letterSpacing: "2px",}}>
+                    <center style={{marginTop:"5%",marginLeft:"3%"}}>
+                      <span style={{color:'white',fontFamily:'Raleway',fontWeight:'bold',fontSize:'18px',letterSpacing: "2px",}}>
                         JUST LANDED
                       </span>
                     </center>
-                    <center style={{marginTop:"5%"}}>
-                      <span style={{color:'black',fontFamily:'Raleway',fontWeight:'bold',fontSize:'18px',letterSpacing: "2px",}}>
+                    <center style={{marginTop:"5%",marginLeft:"3%"}}>
+                      <span style={{color:'white',fontFamily:'Raleway',fontWeight:'bold',fontSize:'16px',letterSpacing: "2px",}}>
                         SHOP NOW
                       </span>
                     </center>
@@ -190,11 +190,11 @@ export default class MobileAppHome extends React.Component {
                   <center><span style={{position:"absolute", top:"90%", left:"43%", color:"black", backgroundColor:"", letterSpacing:"2px", fontWeight:"bolder", fontSize:"100%", fontFamily:"Raleway"}}>SHOP NOW</span></center>
                   </div> */}
                   </Grid.Column>
-                  <Grid.Column width={8}>
+                  <Grid.Column width={8} style={{backgroundColor:'#f4b486'}}>
                     <Image
                       size="big"
                       src="./client/assets/Images/Newistock/mhome/iStock-628276908.jpg"
-                      // style={{height:'50vh'}}
+                      style={{marginLeft:'6%'}}
                       alt=""
                     />
                   </Grid.Column>
@@ -248,12 +248,12 @@ export default class MobileAppHome extends React.Component {
                           style={{
                             position: "absolute",
                             top: "35%",
-                            left: "15%",
+                            left: "25%",
                             color: "#000",
                             fontSize: "18px",
                             letterSpacing: "2px",
                             fontWeight: "800",
-                            fontSize: "150%",
+                            //fontSize: "15?0%",
                             textTransform: "uppercase",
                             fontFamily: "Raleway"
                           }}
@@ -289,8 +289,8 @@ export default class MobileAppHome extends React.Component {
                     <Link to="/mWomenCategory/LACE" style={{ color: "black" }}>
                       <Image
                         size="big"
-                        src='./client/assets/Images/istock/home-2.jpg'
-                        // src="./client/assets/Images/Newistock/mhome/home1.png"
+                        // src='./client/assets/Images/istock/home-2.jpg'
+                        src="./client/assets/Images/Newistock/mhome/home1.png"
                         style={{}}
                         alt=""
                       />
@@ -314,7 +314,8 @@ export default class MobileAppHome extends React.Component {
                     <Image
                       size="medium"
                       style={{ width: "100%" }}
-                      src="./client/assets/Images/istock/home-4.png"
+                      // src="./client/assets/Images/istock/home-4.png"
+                      src="./client/assets/Images/Newistock/mhome/home2.png"
                       alt=""
                     />
                     {/* </Link> */}

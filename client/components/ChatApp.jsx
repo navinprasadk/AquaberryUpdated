@@ -53,6 +53,7 @@ class ChatApp extends React.Component {
             open:false,
             autoHideDuration: 6000,
             open:false,
+            dateValue:'',
             eventmessage: 'Delivery date changed successfully',
             messages: new Array()
         };
@@ -80,7 +81,20 @@ class ChatApp extends React.Component {
         this.setState({ userInput: event.target.value }, function () {
         });
     }
+    componentWillMount() {
+        var d = new Date();
+        var currentDate = d.getDate();
+        var currentDateYear = currentDate.toString().slice(4, 16);
 
+        d.setDate(d.getDate() + 2);
+        var x = d.toString().slice(4, 16);
+        this.setState({
+            currentDateYear,
+            dateValue: x
+        },function(){
+          console.log('kgjhn',this.state.dateValue);
+        });
+    }
 
     handleSendClick() {
         var tempMessages = this.state.messages;
@@ -97,7 +111,7 @@ class ChatApp extends React.Component {
         // var requestString = 'http://127.0.0.1:8080/callDialogflow/' + this.state.userInput + '/' + counter;
         var reply;
         if (counter == 1) {
-            reply = 'Hi, how can I help you?'
+            reply = 'Hello Rachel, how can I help you?'
             this.textToSpeech(reply);
             var tempMessages = this.state.messages;
             var tempBotMessage = {
@@ -110,7 +124,7 @@ class ChatApp extends React.Component {
             })
         }
         else if (counter == 2) {
-          reply = 'Sure, I can do now. Can you confirm the order number?'
+          reply = 'Sure, I can reschedule the delivery for the order #01120448. Let me know your preferred time slot'
           this.textToSpeech(reply);
           var tempMessages = this.state.messages;
           var tempBotMessage = {
@@ -122,8 +136,21 @@ class ChatApp extends React.Component {
               messages: tempMessages
           })
         }
+        // else if (counter == 3) {
+        //   reply = 'Please '
+        //   this.textToSpeech(reply);
+        //   var tempMessages = this.state.messages;
+        //   var tempBotMessage = {
+        //       sender: 'Bot',
+        //       text: reply
+        //   }
+        //   tempMessages.push(tempBotMessage)
+        //   this.setState({
+        //       messages: tempMessages
+        //   })
+        // }
         else if (counter == 3) {
-          reply = 'Please confirm the new date and time.'
+          reply = 'Sure, your order will be delivered on .'
           this.textToSpeech(reply);
           var tempMessages = this.state.messages;
           var tempBotMessage = {
@@ -136,19 +163,6 @@ class ChatApp extends React.Component {
           })
         }
         else if (counter == 4) {
-          reply = 'Sure, done.'
-          this.textToSpeech(reply);
-          var tempMessages = this.state.messages;
-          var tempBotMessage = {
-              sender: 'Bot',
-              text: reply
-          }
-          tempMessages.push(tempBotMessage)
-          this.setState({
-              messages: tempMessages
-          })
-        }
-        else if (counter == 5) {
           reply = 'Always a pleasure.'
           this.textToSpeech(reply);
           var tempMessages = this.state.messages;
@@ -267,7 +281,7 @@ class ChatApp extends React.Component {
         recognition.lang = 'en-US';
         recognition.interimResults = false;
         recognition.maxAlternatives = 1;
-
+        var thirdResponse = `Reshedule it to Friday ${this.state.dateValue} at noon`;
         recognition.start();
 
         recognition.onresult = function (event) {
@@ -280,15 +294,15 @@ class ChatApp extends React.Component {
               speechResult = 'Hi'
             }
             else if(questionCounter == 2){
-              speechResult = 'Can you reschedule the delivery of my order?'
+              speechResult = 'Can you reschedule the delivery of my order'
             }
+            // else if(questionCounter == 3){
+            //   speechResult = 'Thanks, the order number is .'
+            // }
             else if(questionCounter == 3){
-              speechResult = 'Thanks, the order number is 0101234.'
+              speechResult = thirdResponse
             }
             else if(questionCounter == 4){
-              speechResult = 'Reshedule it to Friday, 9th March, 2018 at noon.'
-            }
-            else if(questionCounter == 5){
               speechResult = 'Thanks!'
             }
 

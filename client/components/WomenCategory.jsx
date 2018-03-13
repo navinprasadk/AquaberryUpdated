@@ -82,7 +82,7 @@ var productData = (this.props.cartDetails.recommend.map((item,key) => {
   return(
       <Grid.Column key={key} width={7}>
 
-        <Image as={Link} to='/productDetails/top5' src={item.imgurl} alt="" />
+        <Image src={item.imgurl} alt="" />
 
         {/* <Link to="/signin"> */}
           {iconComponent}

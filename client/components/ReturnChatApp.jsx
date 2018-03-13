@@ -125,7 +125,7 @@ class ReturnChatApp extends React.Component {
       });
     } else if (counter == 2) {
       reply =
-        "Sure , we can help you with that. DO you wish to do an exchange for order # 778098";
+        "Sure. Do you want to exchange the Polka dot top?";
       this.textToSpeech(reply);
       var tempMessages = this.state.messages;
       var tempBotMessage = {
@@ -138,7 +138,7 @@ class ReturnChatApp extends React.Component {
       });
     } else if (counter == 3) {
       reply =
-        "I can give you two options-Exchange it from the nearest store or generate label online?";
+        "I can give you two options. Exchange it from the nearest store or generate a label online.";
       this.textToSpeech(reply);
       var tempMessages = this.state.messages;
       var tempBotMessage = {
@@ -150,7 +150,7 @@ class ReturnChatApp extends React.Component {
         messages: tempMessages
       });
     } else if (counter == 4) {
-      reply = "Sure, confirm pick up date and time to return the item?";
+      reply = "Sure. Confirm the pick up date and time";
       this.textToSpeech(reply);
       var tempMessages = this.state.messages;
       var tempBotMessage = {
@@ -163,7 +163,7 @@ class ReturnChatApp extends React.Component {
       });
     } else if (counter == 5) {
       reply =
-        "Sure. System has been updated with the pickup date and return label is also generated.";
+        "Sure. System has been updated with the pickup date. The return label is generated. Paste the label and keep the package ready";
       this.textToSpeech(reply);
       var tempMessages = this.state.messages;
       var tempBotMessage = {
@@ -317,15 +317,15 @@ class ReturnChatApp extends React.Component {
       if (questionCounter == 1) {
         speechResult = "Hi";
       } else if (questionCounter == 2) {
-        speechResult = "I wish to know the exchange process details😊.";
+        speechResult = "I want to exchange my top";
       } else if (questionCounter == 3) {
         speechResult = "Yes";
       } else if (questionCounter == 4) {
         speechResult =
-          "I would use the second option as I can do it immediately from the app.";
+          "I would like to generate the label online";
       } else if (questionCounter == 5) {
         speechResult =
-          "Get it picked next weekend From my house around 13:00PM";
+          "Get it picked next weekend from my house around 1PM";
       } else if (questionCounter == 6) {
         speechResult = "Thanks !that was quick and easy😊";
       }
