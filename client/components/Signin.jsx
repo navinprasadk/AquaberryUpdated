@@ -6,7 +6,7 @@ const Signin = () => {
   return (
     <div
       className="bgImageSignin"
-      style={{ backgroundImage: "url(./client/assets/Images/Newistock/signin/iStock-628276908.jpg)" }}
+      style={{ backgroundImage: "url(./client/assets/Images/Newistock/signin/iStock-628276908-3.jpeg)" }}
     >
       <Grid>
         {/* backgroundImage:'url(https://www298.lunapic.com/do-not-link-here-use-hosting-instead/151800841630185068?1589511572)' */}

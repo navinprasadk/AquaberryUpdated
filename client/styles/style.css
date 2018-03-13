@@ -206,3 +206,10 @@ color: hsl(253, 194%, 86%) !important;
   /* margin: 4% 8%; */
   border-radius: 3%;
 }
+/* .submit_modifySize{
+  -webkit-box-shadow: 0 6px 10px 0 hsla(0, 0%, 0%, 0.2);
+  -moz-box-shadow: 0 6px 10px 0 hsla(0, 0%, 0%, 0.2);
+  box-shadow: 0 6px 10px 0 hsla(0, 0%, 0%, 0.2);
+  background: linear-gradient(to right, rgba(255, 175, 75, 1) 0%, rgba(223, 75, 55, 1) 100%) !important;
+  border-radius: 3%;
+} */

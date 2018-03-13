@@ -289,7 +289,8 @@ export default class MobileAppHome extends React.Component {
                     <Link to="/mWomenCategory/LACE" style={{ color: "black" }}>
                       <Image
                         size="big"
-                        src="./client/assets/Images/istock/home-2.jpg"
+                        src='./client/assets/Images/istock/home-2.jpg'
+                        // src="./client/assets/Images/Newistock/mhome/home1.png"
                         style={{}}
                         alt=""
                       />

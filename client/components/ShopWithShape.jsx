@@ -146,7 +146,7 @@ class ShopWithShape extends Component {
                 <Grid.Column width={1} />
                 <Grid.Column width={14} style={{ fontFamily: "Raleway" }}>
                   <Header style={{ color: "white", fontFamily: "Raleway" }}>
-                    Best Fit size is{" "}
+                    Best fit size for you is{" "}
                     <span
                       style={{
                         fontFamily: "Raleway",
@@ -154,7 +154,7 @@ class ShopWithShape extends Component {
                         fontWeight: "bold"
                       }}
                     >
-                      Regular Small
+                       Small
                     </span>
                   </Header>
                 </Grid.Column>

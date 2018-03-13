@@ -210,7 +210,7 @@ export default class GoogleSearch extends Component {
                 }}
               >
                 <Card.Content>
-                  <Link to="/womenCategory">
+                  {/* <Link to="/womenCategory"> */}
                     <Card.Header
                       id="googleSearchHeader"
                       style={{
@@ -241,7 +241,7 @@ export default class GoogleSearch extends Component {
                     >
                       https://m.bobo.com>Womens-topmaterials>womenstop
                     </Card.Meta>
-                  </Link>
+                  {/* </Link> */}
                   <Divider />
                   <p
                     id="googleSearchDescription"
@@ -278,7 +278,7 @@ export default class GoogleSearch extends Component {
                 }}
               >
                 <Card.Content>
-                  <Link to="/womenCategory">
+                  {/* <Link to="/womenCategory"> */}
                     <Card.Header
                       id="googleSearchHeader"
                       style={{
@@ -310,7 +310,7 @@ export default class GoogleSearch extends Component {
                     >
                       https://m.terra.com>dressforwomens-womens/women
                     </Card.Meta>
-                  </Link>
+                  {/* </Link> */}
                   <Divider />
                   <p
                     id="googleSearchDescription"
