@@ -45,37 +45,37 @@ module.exports = (
     ],
     recommend: [
       {
-        imgurl: "./client/assets/Images/istock/DigiCat/624248974.jpg",
+        imgurl: "./client/assets/Images/Newistock/mWomanCategory/iStock-624248974.jpg",
         name: "Anna Black Dress",
         price: "$15.00",
         checked: false
       },
       {
-        imgurl: "./client/assets/Images/istock/DigiCat/187038007.jpg",
+        imgurl: "./client/assets/Images/Newistock/mWomanCategory/iStock-187038007.jpg",
         name: "Shelly Long Red Dress",
         price: "$25.00",
         checked: false
       },
       {
-        imgurl: "./client/assets/Images/istock/DigiCat/673617950.jpg",
+        imgurl: "./client/assets/Images/Newistock/mWomanCategory/iStock-673617950.jpg",
         name: "Mia Blue Pleated Dress",
         price: "$23.90",
         checked: false
       },
       {
-        imgurl: "./client/assets/Images/istock/DigiCat/692465082.jpg",
+        imgurl: "./client/assets/Images/Newistock/mWomanCategory/iStock-692465082.jpg",
         name: "Sarah Brown Shifly Dress",
         price: "$19.60",
         checked: false
       },
       {
-        imgurl: "./client/assets/Images/istock/DigiCat/517726549.jpg",
+        imgurl: "./client/assets/Images/Newistock/mWomanCategory/iStock-517726549.jpg",
         name: "Ash Black Bell Cap Dress",
         price: "$19.60",
         checked: false
       },
       {
-        imgurl: "./client/assets/Images/istock/DigiCat/171111543.jpg",
+        imgurl: "./client/assets/Images/Newistock/mWomanCategory/iStock-171111543.jpg",
         name: "Emily Plain White Dress",
         price: "$19.60",
         checked: false

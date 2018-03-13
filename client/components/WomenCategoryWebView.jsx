@@ -150,7 +150,7 @@ export default class WomenCategoryWebView extends Component {
               <Grid.Column width={1} />
               <Grid.Column width={7}>
                 <Image
-                  src="./client/assets/Images/istock/637824612.jpg"
+                  src="./client/assets/Images/Newistock/wWomanCategory/iStock-637824612.jpg"
                   alt=""
                 />
                 <div>
@@ -179,7 +179,7 @@ export default class WomenCategoryWebView extends Component {
               </Grid.Column>
               <Grid.Column width={7}>
                 <Image
-                  src="./client/assets/Images/istock/487485155.jpg"
+                  src="./client/assets/Images/Newistock/wWomanCategory/iStock-487485155.jpg"
                   alt=""
                 />
                 <div>
@@ -210,7 +210,7 @@ export default class WomenCategoryWebView extends Component {
               <Grid.Column width={1} />
               <Grid.Column width={7}>
                 <Image
-                  src="./client/assets/Images/istock/187350666.jpg"
+                  src="./client/assets/Images/Newistock/wWomanCategory/iStock-187350666.jpg"
                   alt=""
                 />
                 <div>
@@ -235,7 +235,7 @@ export default class WomenCategoryWebView extends Component {
               </Grid.Column>
               <Grid.Column width={7}>
                 <Image
-                  src="./client/assets/Images/istock/904593662.jpg"
+                  src="./client/assets/Images/Newistock/wWomanCategory/iStock-904593662.jpg"
                   alt=""
                 />
                 <div>
@@ -261,79 +261,17 @@ Emy Pleated Peach Dress                    </p>
               </Grid.Column>
               <Grid.Column width={1} />
             </Grid.Row>
-
-            {/* <Grid.Row only="mobile">
-              <Grid.Column width={1} />
-
-              <Grid.Column width={7}>
-                <Image
-                  src="./client/assets/Images/istock/505864838.jpg"
-                  alt=""
-                />
-                <div>
-                  <center style={{ marginTop: "5%" }}>
-                    <p className="WomenCategoryWebViewTitle">
-                      Mia High Neck In Light Pink
-                    </p>
-                  </center>
-                  <center>
-                    <p className="WomenCategoryWebViewPrice">$35.00</p>
-                  </center>
-
-                  <Label
-                    size="mini"
-                    circular
-                    style={{ backgroundColor: "#94b359" }}
-                  />
-                  <Label
-                    size="mini"
-                    circular
-                    style={{ backgroundColor: "#b2ae85" }}
-                  />
-                </div>
-              </Grid.Column>
-
-              <Grid.Column width={7}>
-                <Image
-                  src="./client/assets/Images/istock/493031324.jpg"
-                  alt=""
-                />
-                <div>
-                  <center style={{ marginTop: "5%" }}>
-                    <p className="WomenCategoryWebViewTitle">
-                      Flora Long Blue Fleece Jacket
-                    </p>
-                  </center>
-                  <center>
-                    <p className="WomenCategoryWebViewPrice">$20.00</p>
-                  </center>
-
-                  <Label
-                    size="mini"
-                    circular
-                    style={{ backgroundColor: "#D0D3D4" }}
-                  />
-                  <Label
-                    size="mini"
-                    circular
-                    style={{ backgroundColor: "#000" }}
-                  />
-                </div>
-              </Grid.Column>
-              <Grid.Column width={1} />
-            </Grid.Row> */}
-
             <Grid.Row only="mobile">
               <Grid.Column width={1} />
               <Grid.Column width={7}>
                 <Image
-                  src="./client/assets/Images/istock/621465950.jpg"
+                  src="./client/assets/Images/Newistock/wWomanCategory/iStock-621465950.jpg"
                   alt=""
                 />
                 <div>
                   <center style={{ marginTop: "5%" }}>
                     <p className="WomenCategoryWebViewTitle">
-                      Fem multicolor stole 
+                      Fem multicolor stole
                     </p>
                   </center>
                   <center>
@@ -354,7 +292,7 @@ Emy Pleated Peach Dress                    </p>
               </Grid.Column>
               <Grid.Column width={7}>
                 <Image
-                  src="./client/assets/Images/istock/624248974.jpg"
+                  src="./client/assets/Images/Newistock/wWomanCategory/iStock-624248974.jpg"
                   alt=""
                 />
                 <div>
