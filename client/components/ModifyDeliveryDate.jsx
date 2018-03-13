@@ -126,7 +126,7 @@ export default class ModifyDeliveryDate extends Component {
               <Image
                 size="tiny"
                 style={{ borderRadius: "10%", height: "100%" }}
-                src="/client/assets/Images/istock/467870548-1.jpg"
+                src="/client/assets/Images/Newistock/Orders/iStock-467870548.jpg"
               />
               <p style={{ marginLeft: "3%", fontFamily: "Raleway" }}>
                 <Header className="darkText"> Sia Dress w/ Pockets</Header>

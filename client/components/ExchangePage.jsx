@@ -38,7 +38,7 @@ render(){
           </Grid.Column>
           <Divider />
           <Grid.Column width={16}  style={{ display: "flex", flexDirection: "row", justifyContent: "flex-start" }}>
-            <Image size='tiny' style={{ borderRadius: "10%", height: '100%' }} src='/client/assets/Images/istock/514713868ss.jpg' />
+            <Image size='tiny' style={{ borderRadius: "10%", height: '100%' }} src="/client/assets/Images/Newistock/Promoforyou/Recommendation/iStock-514713868.jpg" />
               <p style={{ marginLeft: "3%",fontFamily:'Raleway'}}>
                   <Header className="darkText" > Polka Black Dotted Top</Header>
                   <p className="greyText" style={{ display: "flex", flexDirection: "row", justifyContent: "space-between", fontSize: "90%", color: "#9E9E9E" }}><span><Header style={{fontFamily:'Raleway'}}>55$</Header></span>   <span><span style={{ fontWeight: "bold" }}>Quantity</span> 3 Items</span> </p>

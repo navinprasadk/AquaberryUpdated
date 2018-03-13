@@ -99,7 +99,7 @@ const Signup = () => {
     <div
       style={{
         overflow: "hidden",
-        backgroundImage: "url(./client/assets/Images/signin4.jpeg)",
+        backgroundImage: "url(./client/assets/Images/Newistock/signin/iStock-628276908.jpg)",
         backgroundAttachment: "fixed",
         backgroundSize: "cover",
         width: "100%"

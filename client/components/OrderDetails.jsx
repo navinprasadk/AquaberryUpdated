@@ -161,7 +161,7 @@ export default class OrderDetails extends Component {
               <Image
                 size="tiny"
                 style={{ borderRadius: "10%", height: "100%" }}
-                src="/client/assets/Images/istock/467870548-1.jpg"
+                src="/client/assets/Images/Newistock/Orders/iStock-467870548.jpg"
               />
               <p style={{ marginLeft: "3%" }}>
                 <Header className="darkText"> Sia Dress w/ Pockets</Header>
@@ -251,7 +251,7 @@ export default class OrderDetails extends Component {
               <Image
                 size="tiny"
                 style={{ borderRadius: "10%", height: "100%" }}
-                src="/client/assets/Images/istock/622809430ss.jpg"
+                src="/client/assets/Images/Newistock/Orders/iStock-622809430.jpg"
               />
               <p style={{ marginLeft: "3%" }}>
                 <Header className="darkText"> Polka Dot Tie-Up Top</Header>
@@ -328,7 +328,7 @@ export default class OrderDetails extends Component {
               <Image
                 size="tiny"
                 style={{ borderRadius: "10%", height: "100%" }}
-                src="/client/assets/Images/istock/514713868ss.jpg"
+                src="/client/assets/Images/Newistock/Promoforyou/Recommendation/iStock-514713868.jpg"
               />
               <p style={{ marginLeft: "3%" }}>
                 <Header className="darkText"> Polka Black Dotted Top</Header>
@@ -405,7 +405,7 @@ export default class OrderDetails extends Component {
               <Image
                 size="tiny"
                 style={{ borderRadius: "10%", height: "100%" }}
-                src="/client/assets/Images/istock/180705919ss.jpg"
+                src="/client/assets/Images/Newistock/Promoforyou/Recommendation/iStock-180705919.jpg"
               />
               <p style={{ marginLeft: "3%" }}>
                 <Header className="darkText"> Purple Printed Top</Header>

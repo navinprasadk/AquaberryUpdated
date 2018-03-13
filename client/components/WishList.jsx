@@ -22,7 +22,7 @@ const WishList = () => {
           <Grid.Column width={1} />
           <Grid.Column width={7}>
             <Link to="/productDetails/top1">
-              <Image src="./client/assets/Images/istock/467870548.jpg" />
+              <Image src="./client/assets/Images/Newistock/wishList/iStock-467870548.jpg" />
               <div style={{ color: "black" }}>
                 <p style={{ fontWeight: "bold" }}>Sia Dress w/ Pockets</p>
                 <p>$33.00</p>
@@ -30,7 +30,7 @@ const WishList = () => {
             </Link>
           </Grid.Column>
           <Grid.Column width={7}>
-            <Image src="./client/assets/Images/istock/175505251.jpg" />
+            <Image src="./client/assets/Images/Newistock/wishList/iStock-175505251.jpg" />
             <div>
               <p style={{ fontWeight: "bold" }}>Mia Blue Dress w/ Polka Dots</p>
               <p>$24.00</p>
@@ -42,14 +42,14 @@ const WishList = () => {
         <Grid.Row style={{}}>
           <Grid.Column width={1} />
           <Grid.Column width={7}>
-            <Image src="./client/assets/Images/istock/172470273.jpg" />
+            <Image src="./client/assets/Images/Newistock/wishList/iStock-172470273.jpg" />
             <div>
               <p style={{ fontWeight: "bold" }}>Flora Short Dress</p>
               <p>$25.00</p>
             </div>
           </Grid.Column>
           <Grid.Column width={7}>
-            <Image src="./client/assets/Images/istock/181101785.jpg" />
+            <Image src="./client/assets/Images/Newistock/wishList/iStock-181101785.jpg" />
             <div>
               <p style={{ fontWeight: "bold" }}>
                 Myrtle Short Sleeveless Dress
@@ -63,14 +63,14 @@ const WishList = () => {
         <Grid.Row style={{ marginBottom: "12%" }}>
           <Grid.Column width={1} />
           <Grid.Column width={7}>
-            <Image src="./client/assets/Images/istock/453681153.jpg" />
+            <Image src="./client/assets/Images/Newistock/wishList/iStock-453681153.jpg" />
             <div>
               <p style={{ fontWeight: "bold" }}>Red Peep Toe Heels</p>
               <p>$25.00</p>
             </div>
           </Grid.Column>
           <Grid.Column width={7}>
-            <Image src="./client/assets/Images/istock/171301947.jpg" />
+            <Image src="./client/assets/Images/Newistock/wishList/iStock-171301947.jpg" />
             <div>
               <p style={{ fontWeight: "bold" }}>Tan Peep Toe Heels</p>
               <p>$20.00</p>

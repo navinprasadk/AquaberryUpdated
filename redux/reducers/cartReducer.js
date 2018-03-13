@@ -7,37 +7,37 @@ module.exports = (
     count: 0,
     women: [
       {
-        imgurl: "./client/assets/Images/istock/175505251.jpg",
+        imgurl: "./client/assets/Images/Newistock/recommended/Items/iStock-175505251.jpg",
         name: "Mia Blue Dress w/ Polka Dots",
         price: "$24.00",
         checked: false
       },
       {
-        imgurl: "./client/assets/Images/istock/476962376.jpg",
+        imgurl: "./client/assets/Images/Newistock/recommended/Items/iStock-476962376.jpg",
         name: "Amy Classic Short Dress",
         price: "$33.00",
         checked: false
       },
       {
-        imgurl: "./client/assets/Images/istock/467870548.jpg",
+        imgurl: "./client/assets/Images/Newistock/recommended/Items/iStock-467870548.jpg",
         name: "Sia Dress w/ Pockets",
         price: "$33.00",
         checked: false
       },
       {
-        imgurl: "./client/assets/Images/istock/181101785.jpg",
+        imgurl: "./client/assets/Images/Newistock/recommended/Items/iStock-181101785.jpg",
         name: "Myrtle Short Sleeveless Dress",
         price: "$50.40",
         checked: false
       },
       {
-        imgurl: "./client/assets/Images/istock/179142052.jpg",
+        imgurl: "./client/assets/Images/Newistock/recommended/Items/iStock-179142052.jpg",
         name: "Clara Broad Striped Short Dress ",
         price: "$35.00",
         checked: false
       },
       {
-        imgurl: "./client/assets/Images/istock/172470273.jpg",
+        imgurl: "./client/assets/Images/Newistock/recommended/Items/iStock-172470273.jpg",
         name: "Flora Short Dress",
         price: "$25.00",
         checked: false

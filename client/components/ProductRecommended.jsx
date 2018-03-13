@@ -18,7 +18,7 @@ const ProductRecommended = () => {
                 <Card style={{ width: "80%" }}>
                   <center>
                     <Image
-                      src="./client/assets/Images/istock/674220114ss.jpg"
+                      src="./client/assets/Images/Newistock/productDetail/history/iStock-674220114.jpg"
                       size="medium"
                     />
                   </center>
@@ -34,13 +34,13 @@ const ProductRecommended = () => {
                 <Card style={{ width: "80%" }}>
                   <center>
                     <Image
-                      src="./client/assets/Images/istock/578791454ss.jpg"
+                      src="./client/assets/Images/Newistock/productDetail/history/iStock-578791454.jpg"
                       size="medium"
                     />
                   </center>
                   <Card.Content>
                     <Card.Header style={{ fontFamily: "Raleway" }}>
-                      Benny White Top W/ Lace 
+                      Benny White Top W/ Lace
                     </Card.Header>
                     <Card.Description>$33.00</Card.Description>
                   </Card.Content>
@@ -50,13 +50,13 @@ const ProductRecommended = () => {
                 <Card style={{ width: "80%" }}>
                   <center>
                     <Image
-                      src="./client/assets/Images/istock/172314366ss.jpg"
+                      src="./client/assets/Images/Newistock/productDetail/history/iStock-172314366.jpg"
                       size="medium"
                     />
                   </center>
                   <Card.Content>
                     <Card.Header style={{ fontFamily: "Raleway" }}>
-                      Red Printed Dress
+                      Red Printed Short Dress
                     </Card.Header>
                     <Card.Description>$30.00</Card.Description>
                   </Card.Content>

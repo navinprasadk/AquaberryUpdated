@@ -78,7 +78,7 @@ class ShopWithShape extends Component {
           className="greyText"
           style={{
             fontFamily: "Raleway",
-            fontSize: "90%",
+            fontSize: "16px",
             fontWeight: "bold",
             textTransform: "uppercase"
           }}
@@ -102,7 +102,7 @@ class ShopWithShape extends Component {
         >
           Front View
         </center>
-        <Image src="./client/assets/Images/istock/508132676-1.png" />
+        <Image src="./client/assets/Images/Newistock/ShopWithshape/iStock-508132676.jpg" style={{marginTop:'10%'}}/>
       </div>
     );
     var sideview = (
@@ -111,7 +111,7 @@ class ShopWithShape extends Component {
           className="greyText"
           style={{
             fontFamily: "Raleway",
-            fontSize: "90%",
+            fontSize: "16px",
             fontWeight: "bold",
             textTransform: "uppercase"
           }}
@@ -134,7 +134,7 @@ class ShopWithShape extends Component {
         >
           Side View
         </center>
-        <Image src="./client/assets/Images/istock/508132536-1.png" />
+        <Image src="./client/assets/Images/Newistock/ShopWithshape/iStock-508132536.jpg" style={{height:'43vh',marginTop:'10%'}}/>
       </div>
     );
     return (

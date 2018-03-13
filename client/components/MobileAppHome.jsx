@@ -193,7 +193,7 @@ export default class MobileAppHome extends React.Component {
                   <Grid.Column width={8}>
                     <Image
                       size="big"
-                      src="./client/assets/Images/istock/DigiCat/digi-cat-1.jpg"
+                      src="./client/assets/Images/Newistock/mhome/iStock-628276908.jpg"
                       // style={{height:'50vh'}}
                       alt=""
                     />
@@ -215,7 +215,7 @@ export default class MobileAppHome extends React.Component {
                     <center>
                       <Image
                         size="big"
-                        src="./client/assets/Images/istock/517726535.jpg"
+                        src="./client/assets/Images/Newistock/mhome/iStock-517726535.jpg"
                         style={{}}
                         alt=""
                       />

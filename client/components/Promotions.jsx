@@ -5,7 +5,7 @@ import Slider from "react-slick";
 import AppBar from "./AppBar.jsx";
 
  const Promotions = () =>  {
-  
+
     var settings = {
       dots: false,
       infinite: false,
@@ -13,7 +13,7 @@ import AppBar from "./AppBar.jsx";
       slidesToShow: 2,
       slidesToScroll: 1
     };
-    
+
     var settingsOutfit = {
       dots: true,
       infinite: true,
@@ -59,7 +59,7 @@ import AppBar from "./AppBar.jsx";
                   className="card_Promotions_Carousel"
                   size="large"
                   style={{ borderRadius: "10%", height: "100%" }}
-                  src="/client/assets/Images/istock/514713868ss.jpg"
+                  src="/client/assets/Images/Newistock/Promoforyou/Recommendation/iStock-514713868.jpg"
                 />
                 <span style={{ marginTop: "4%", textTransform: "uppercase" }}>
                   <center>
@@ -96,7 +96,7 @@ import AppBar from "./AppBar.jsx";
                   className="card_Promotions_Carousel"
                   size="large"
                   style={{ borderRadius: "10%", height: "100%" }}
-                  src="/client/assets/Images/istock/180705919ss.jpg"
+                  src="/client/assets/Images/Newistock/Promoforyou/Recommendation/iStock-180705919.jpg"
                 />
                 <span style={{ marginTop: "4%", textTransform: "uppercase" }}>
                   <center>
@@ -133,7 +133,7 @@ import AppBar from "./AppBar.jsx";
                   className="card_Promotions_Carousel"
                   size="large"
                   style={{ borderRadius: "10%", height: "100%" }}
-                  src="/client/assets/Images/istock/487527431ss.jpg"
+                  src="/client/assets/Images/Newistock/Promoforyou/Recommendation/iStock-487527431.jpg"
                 />
                 <span style={{ marginTop: "4%", textTransform: "uppercase" }}>
                   <center>
@@ -170,7 +170,7 @@ import AppBar from "./AppBar.jsx";
                   className="card_Promotions_Carousel"
                   size="large"
                   style={{ borderRadius: "10%", height: "100%" }}
-                  src="/client/assets/Images/istock/491575350ss.jpg"
+                  src="/client/assets/Images/Newistock/Promoforyou/Recommendation/iStock-491575350.jpg"
                 />
                 <span style={{ marginTop: "4%", textTransform: "uppercase" }}>
                   <center>
@@ -234,7 +234,7 @@ import AppBar from "./AppBar.jsx";
                 <Image
                   size="medium"
                   style={{ borderRadius: "2%", height: "43vh" }}
-                  src="/client/assets/Images/istock/512175755u.jpg"
+                  src="/client/assets/Images/Newistock/Promoforyou/Outfitfor/iStock-512175755.jpg"
                 />
               </Grid.Column>
               <Grid.Column width={2} />
@@ -259,7 +259,7 @@ import AppBar from "./AppBar.jsx";
                     justifyContent: "center",
                     alignSelf: "center"
                   }}
-                  src="/client/assets/Images/istock/847389916.jpg"
+                  src="/client/assets/Images/Newistock/Promoforyou/Outfitfor/iStock-847389916.jpg"
                 />
               </Grid.Column>
               <Grid.Column width={2} />
@@ -351,7 +351,7 @@ import AppBar from "./AppBar.jsx";
                   className="card_Promotions_Carousel"
                   size="large"
                   style={{ borderRadius: "10%", height: "100%" }}
-                  src="/client/assets/Images/istock/459193899ss.jpg"
+                  src="/client/assets/Images/Newistock/Promoforyou/Latesttrends/iStock-459193899.jpg"
                 />
                 <span style={{ marginTop: "4%", textTransform: "uppercase" }}>
                   <center>
@@ -386,7 +386,7 @@ import AppBar from "./AppBar.jsx";
                   className="card_Promotions_Carousel"
                   size="large"
                   style={{ borderRadius: "10%", height: "100%" }}
-                  src="/client/assets/Images/istock/handbagss.jpeg"
+                  src="/client/assets/Images/Newistock/Promoforyou/Latesttrends/iStock-501130668.jpg"
                 />
                 <span style={{ marginTop: "4%", textTransform: "uppercase" }}>
                   <center>
@@ -421,7 +421,7 @@ import AppBar from "./AppBar.jsx";
                   className="card_Promotions_Carousel"
                   size="large"
                   style={{ borderRadius: "10%", height: "100%" }}
-                  src="/client/assets/Images/istock/624226620ss.jpg"
+                  src="/client/assets/Images/Newistock/Promoforyou/Latesttrends/iStock-624226620.jpg"
                 />
                 <span style={{ marginTop: "4%", textTransform: "uppercase" }}>
                   <center>
@@ -456,7 +456,7 @@ import AppBar from "./AppBar.jsx";
                   className="card_Promotions_Carousel"
                   size="large"
                   style={{ borderRadius: "10%", height: "100%" }}
-                  src="/client/assets/Images/istock/468629769ss.jpg"
+                  src="/client/assets/Images/Newistock/Promoforyou/Latesttrends/iStock-468629769.jpg"
                 />
                 <span style={{ marginTop: "4%", textTransform: "uppercase" }}>
                   <center>

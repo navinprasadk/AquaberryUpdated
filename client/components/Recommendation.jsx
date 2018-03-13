@@ -249,7 +249,7 @@ class Recommendation extends Component {
                     className="card_Promotions_Carousel"
                     size="large"
                     style={{ borderRadius: "10%", height: "100%" }}
-                    src="/client/assets/Images/istock/171301947.jpg"
+                    src="/client/assets/Images/Newistock/recommended/Styleitwith/iStock-171301947.jpg"
                   />
                   {this.state.emptyHeart ? (
                     <Icon
@@ -311,7 +311,7 @@ class Recommendation extends Component {
                     className="card_Promotions_Carousel"
                     size="large"
                     style={{ borderRadius: "10%", height: "100%" }}
-                    src="/client/assets/Images/istock/185245429.jpg"
+                    src="/client/assets/Images/Newistock/recommended/Styleitwith/iStock-185245429.jpg"
                   />
                   {this.state.emptyHeart1 ? (
                     <Icon
@@ -373,7 +373,7 @@ class Recommendation extends Component {
                     className="card_Promotions_Carousel"
                     size="large"
                     style={{ borderRadius: "10%", height: "100%" }}
-                    src="/client/assets/Images/istock/469138016.jpg"
+                    src="/client/assets/Images/Newistock/recommended/Styleitwith/iStock-469138016.jpg"
                   />
                   {this.state.emptyHeart2 ? (
                     <Icon
@@ -435,7 +435,7 @@ class Recommendation extends Component {
                     className="card_Promotions_Carousel"
                     size="large"
                     style={{ borderRadius: "10%", height: "100%" }}
-                    src="/client/assets/Images/istock/453681153.jpg"
+                    src="/client/assets/Images/Newistock/recommended/Styleitwith/iStock-453681153.jpg"
                   />{" "}
                   {this.state.emptyHeart3 ? (
                     <Icon
@@ -518,7 +518,7 @@ class Recommendation extends Component {
                     className="card_Promotions_Carousel"
                     size="medium"
                     style={{ borderRadius: "2%", height: "100%" }}
-                    src="/client/assets/Images/istock/514514983.jpg"
+                    src="/client/assets/Images/Newistock/recommended/celebrities/iStock-514514983.jpg"
                   />
                 </Grid.Column>
               </Grid.Row>
@@ -536,7 +536,7 @@ class Recommendation extends Component {
                     className="card_Promotions_Carousel"
                     size="medium"
                     style={{ borderRadius: "2%", height: "100%" }}
-                    src="/client/assets/Images/istock/611899104.jpg"
+                    src="/client/assets/Images/Newistock/recommended/celebrities/iStock-611899104.jpg"
                   />
                 </Grid.Column>
               </Grid.Row>
@@ -554,7 +554,7 @@ class Recommendation extends Component {
                     className="card_Promotions_Carousel"
                     size="medium"
                     style={{ borderRadius: "2%", height: "100%" }}
-                    src="/client/assets/Images/istock/184911935.jpg"
+                    src="/client/assets/Images/Newistock/recommended/celebrities/iStock-184911935.jpg"
                   />
                 </Grid.Column>
               </Grid.Row>
