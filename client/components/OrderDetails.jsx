@@ -20,23 +20,41 @@ export default class OrderDetails extends Component {
     this.state = {
       activeIndex: 0,
       dateValue: "",
-      dateValueOrder: ""
+      dateValueTransit: "",
+      dateValueCancelled: "",
+      dateValueReturn: "",
+      dateValueDelivered: ""
     };
   }
 
   componentWillMount() {
-    var d = new Date();
-    d.setDate(d.getDate() + 10);
-    var x = d.toString().slice(4, 16);
-    this.setState({
-      dateValue: x
-    });
-
+    // Today
     var today = new Date();
-    today.setDate(today.getDate() + 2);
-    var k = today.toString().slice(4, 16);
+    today.setDate(today.getDate());
+    var a = today.toString().slice(4, 16);
     this.setState({
-      dateValueOrder: k
+      dateValueTransit: a
+    });
+    // 10 days before
+    var d = new Date();
+    d.setDate(d.getDate() - 10);
+    var b = d.toString().slice(4, 16);
+    this.setState({
+      dateValueCancelled: b
+    });
+    // 18 days before
+    var currentDate = new Date();
+    currentDate.setDate(currentDate.getDate() - 18);
+    var c = currentDate.toString().slice(4, 16);
+    this.setState({
+      dateValueReturn: c
+    });
+    // 50 days before
+    var cd = new Date();
+    cd.setDate(cd.getDate() - 50);
+    var d = cd.toString().slice(4, 16);
+    this.setState({
+      dateValueDelivered: d
     });
   }
 
@@ -154,7 +172,7 @@ export default class OrderDetails extends Component {
                   fontFamily: "Raleway"
                 }}
               >
-                Placed on {this.state.dateValueOrder}
+                Placed on {this.state.dateValueTransit}
               </p>
             </Grid.Column>
             <Divider />
@@ -244,7 +262,7 @@ export default class OrderDetails extends Component {
                 className="lightGreyText"
                 style={{ position: "right", fontSize: "75%" }}
               >
-                Placed on Mar 13 2018
+                Placed on {this.state.dateValueCancelled}
               </p>
             </Grid.Column>
             <Divider />
@@ -321,7 +339,7 @@ export default class OrderDetails extends Component {
                 className="lightGreyText"
                 style={{ position: "right", fontSize: "75%" }}
               >
-                Placed on Feb 21 2018
+                Placed on {this.state.dateValueReturn}
               </p>
             </Grid.Column>
             <Divider />
@@ -339,7 +357,10 @@ export default class OrderDetails extends Component {
                 src="/client/assets/Images/Newistock/Promoforyou/Recommendation/iStock-514713868.jpg"
               />
               <p style={{ marginLeft: "3%" }}>
-                <Header className="darkText" style={{wordSpacing:'17px'}}> Polka  Dot Top</Header>
+                <Header className="darkText" style={{ wordSpacing: "25px" }}>
+                  {" "}
+                  Polka Dot Top
+                </Header>
                 <p
                   className="greyText"
                   style={{
@@ -398,7 +419,7 @@ export default class OrderDetails extends Component {
                 className="lightGreyText"
                 style={{ position: "right", fontSize: "75%" }}
               >
-                Placed on Nov 05 2017
+                Placed on {this.state.dateValueDelivered}
               </p>
             </Grid.Column>
             <Divider />
@@ -416,7 +437,7 @@ export default class OrderDetails extends Component {
                 src="/client/assets/Images/Newistock/Promoforyou/Recommendation/iStock-180705919.jpg"
               />
               <p style={{ marginLeft: "3%" }}>
-                <Header className="darkText"> Purple Printed Top</Header>
+                <Header className="darkText" style={{ wordSpacing: "10px" }}> Purple Printed Top</Header>
                 <p
                   className="greyText"
                   style={{

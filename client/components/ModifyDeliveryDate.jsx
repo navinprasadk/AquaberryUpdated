@@ -20,7 +20,8 @@ export default class ModifyDeliveryDate extends Component {
     super(props);
     this.state = {
       activeIndex: 0,
-      dateValue: ""
+      dateValue: "",
+      dateValueTransit: ""
     };
   }
 
@@ -30,6 +31,14 @@ export default class ModifyDeliveryDate extends Component {
     var x = d.toString().slice(4, 16);
     this.setState({
       dateValue: x
+    });
+
+    // Today
+    var today = new Date();
+    today.setDate(today.getDate());
+    var a = today.toString().slice(4, 16);
+    this.setState({
+      dateValueTransit: a
     });
   }
 
@@ -111,7 +120,7 @@ export default class ModifyDeliveryDate extends Component {
                   fontFamily: "Raleway"
                 }}
               >
-                Placed on 23/02/18
+                Placed on {this.state.dateValueTransit}
               </p>
             </Grid.Column>
             <Divider />
