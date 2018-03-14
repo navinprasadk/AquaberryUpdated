@@ -178,8 +178,8 @@ render(){
                 </List.Content>
                 </List.Item>
               </List>
-              <span style={{marginLeft:'80%',color:'#4183c4'}}>See All</span>
-              {/* <h4>Connect to <span><Icon color='blue' size='large' name='facebook' /></span>for live customer feedback. <span><a>click here</a></span>  </h4> */}
+              {/* <span style={{marginLeft:'80%',color:'#4183c4'}}>See All</span> */}
+              <h4>Connect to <span><Icon color='blue' size='large' name='facebook' /></span>for live customer feedback. <span><a>click here</a></span>  </h4>
           </Grid.Column>
         </Grid.Row>
         <Grid.Row>
@@ -188,9 +188,7 @@ render(){
           <h4 style={{fontFamily: 'Raleway '}}>LAST PURCHASE HISTORY</h4>
           </Grid.Column>
           {/* <Grid.Column width={2}/> */}
-          <Grid.Column width={4}>
-          <span style={{fontFamily: 'Raleway'}}>3 Items</span>
-          </Grid.Column>
+          <Grid.Column width={4}/>
         </Grid.Row>
 
         <Grid.Row/>

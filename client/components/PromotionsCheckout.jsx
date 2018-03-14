@@ -34,7 +34,7 @@ export default class PromotionsCheckout extends Component {
             dateValue: x
         });
     }
-    
+
     handleChange = (e, { value }) => this.setState({ value, deliveryDate:true})
 
     render() {
@@ -44,8 +44,8 @@ export default class PromotionsCheckout extends Component {
                 <AppBar />
 
                 <Grid>
-{/*                     
-                    <Grid.Row only='mobile' className="card_smartStoreCheckout" style={{ marginTop: "15%" }}> 
+{/*
+                    <Grid.Row only='mobile' className="card_smartStoreCheckout" style={{ marginTop: "15%" }}>
                         <Grid.Column width={16} style={{ display: "flex", flexDirection: "column", justifyContent: "center" }}>
                             <span >
                                <center> <h2> Thank you </h2></center>
@@ -116,11 +116,11 @@ export default class PromotionsCheckout extends Component {
                             </Grid.Row>
 
                             <Grid.Row only='mobile' >
-                                <Grid.Column width={1} />
-                                <Grid.Column width={12}>
+                                <Grid.Column width={3} />
+                                <Grid.Column width={10}>
                                             <center><h3 style={{ fontWeight: "bold", fontFamily:'Raleway' }}> You can collect it from </h3></center>
                                 </Grid.Column>
-                                <Grid.Column width={1} />
+                                <Grid.Column width={3} />
                             </Grid.Row>
 
                             <Grid.Row className='' style={{ marginTop: "-2%" }} only='mobile'>
@@ -142,10 +142,10 @@ export default class PromotionsCheckout extends Component {
                         )
                         :null
                     }
-                    
+
                 </Grid>
             </div>
-            
+
         );
     }
 }

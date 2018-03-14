@@ -109,7 +109,8 @@ class ModifySize extends Component {
           <Grid.Row>
             <Grid.Column width={16}>
               <center>
-                <Link to="/personalstylist/true/true/true/true/true/true">
+                {/* <Link to="/personalstylist/true/true/true/true/true/true"> */}
+                <Link to='/recommendation'>
                   <Button style={{ backgroundColor: "#ed6a07", color:'white', letterSpacing:'3px',   boxShadow: "0 6px 10px 0 hsla(0, 0%, 0%, 0.2)", textTransform:'uppercase' }}>Submit</Button>
                 </Link>
               </center>

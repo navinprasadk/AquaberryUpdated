@@ -158,14 +158,14 @@ class Recommendation extends Component {
         <AppBar />
 
         <Grid>
-          <Grid.Row style={{marginTop:'5%'}}>
-            {/* <Grid.Column width={1} /> */}
-            <Grid.Column width={16}>
+          <Grid.Row style={{marginTop:'7%'}}>
+            <Grid.Column width={2} />
+            <Grid.Column width={5}>
               <center><Image
                 circular
                 // onClick={this.handleVoiceRecommendation.bind(this)}
                 src="./client/assets/Images/istock/bot.png"
-                size="small"
+                size="medium"
                 style={{
                   top: "20%"
                   // left: "-134%"
@@ -173,7 +173,10 @@ class Recommendation extends Component {
               /></center>
 
             </Grid.Column>
-            {/* <Grid.Column width={9} /> */}
+            <Grid.Column width={9} style={{marginTop:'15%',marginLeft:'-9%'}}>
+              <h3>Selected Size : {this.props.cartDetails.size} </h3>
+            </Grid.Column>
+            {/* <Grid.Column width={1}/> */}
           </Grid.Row>
           {this.state.Recommended == true ? (
             <Grid.Row style={{ marginTop: "2%" }}>
@@ -587,7 +590,7 @@ class Recommendation extends Component {
         {this.state.voiceRecommendation && (
           <VoicePlayer
             play
-            text="Here Are some Recommended items based on your preferences"
+            text="Here Are some Recommended items based on your size and preferences"
             onEnd={() => {
               this.setState({
                 Recommended: true,

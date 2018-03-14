@@ -181,7 +181,8 @@ class ShopWithShape extends Component {
                 </Grid.Column>
                 <Grid.Column width={1} />
                 <Grid.Column width={6}>
-                  <Link to="/personalstylist/true/true/true/true/true/true">
+                  {/* <Link to="/personalstylist/true/true/true/true/true/true/true"> */}
+                  <Link to='/recommendation'>
                     <Button color='green'
                       style={{
                         // backgroundColor: '#8BC34A',

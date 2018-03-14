@@ -331,7 +331,7 @@ export default class OrderDetails extends Component {
                 src="/client/assets/Images/Newistock/Promoforyou/Recommendation/iStock-514713868.jpg"
               />
               <p style={{ marginLeft: "3%" }}>
-                <Header className="darkText"> Polka Black Dotted Top</Header>
+                <Header className="darkText"> Polka  Dot Top</Header>
                 <p
                   className="greyText"
                   style={{
