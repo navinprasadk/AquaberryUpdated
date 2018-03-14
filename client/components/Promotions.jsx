@@ -284,7 +284,7 @@ import AppBar from "./AppBar.jsx";
             <Grid.Column width={7}>
               <center style={{ fontWeight: "bold" }}>
                 <h4>
-                  Combo Price <span style={{ color: "green" }}> $85 </span>
+                  Combo Price <span style={{ color: "green" }}> $70 </span>
                 </h4>
               </center>
             </Grid.Column>

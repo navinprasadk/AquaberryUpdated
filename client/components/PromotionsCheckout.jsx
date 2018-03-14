@@ -5,9 +5,9 @@ import AppBar from './AppBar.jsx';
 
 const locationDetails = [
     {
-        header: 'Qusos ',
-        description: 'Plot No 1, Billi Graham Avenue, Los Vegas',
-        meta: 'qusos@hybrid.com',
+        header: 'Aquaberry ',
+        description: 'Plot No 1, Billi Graham Avenue, California',
+        // meta: 'qusos@hybrid.com',
     }
 ]
 
@@ -106,10 +106,10 @@ export default class PromotionsCheckout extends Component {
                                 </Grid.Column>
                                 {/* <Divider /> */}
                                 <Grid.Column width={16} style={{ display: "flex", flexDirection: "row", justifyContent: "flex-start" }}>
-                                            <Image size='tiny' style={{ borderRadius: "10%", height: '100%' }} src='/client/assets/Images/istock/686261786ss.jpg' />
+                                            <Image size='tiny' style={{ borderRadius: "10%", height: '100%' }} src='./client/assets/Images/Newistock/PromoCheckout/iStock-847389916.jpg' />
                                     <p style={{ marginLeft: "3%" }}>
-                                                <h4 className="darkText" >Blue Top with black slipper & handbag</h4>
-                                        <p className="greyText" style={{ display: "flex", flexDirection: "row", justifyContent: "space-between", fontSize: "90%", color: "#9E9E9E" }}><span><Header>$85</Header></span>   <span><span style={{ fontWeight: "bold" }}>Quantity</span> 3 Items</span> </p>
+                                                <h4 className="darkText" >White dress, Beige sandals & Red handbag, Beige Hat</h4>
+                                        <p className="greyText" style={{ display: "flex", flexDirection: "row", justifyContent: "space-between", fontSize: "90%", color: "#9E9E9E" }}><span><Header>$70</Header></span>   <span><span style={{ fontWeight: "bold" }}>Quantity</span> 3 Items</span> </p>
                                         <p style={{leeterSpacing:"1px"}}><Icon color="orange" name="dot circle outline" />Processing</p>
                                     </p>
                                 </Grid.Column>
