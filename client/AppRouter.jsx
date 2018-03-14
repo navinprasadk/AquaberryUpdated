@@ -82,7 +82,7 @@ export default class AppRouter extends Component {
             <Route path="/exchangeSuccessful" component={ExchangeSuccessful} />
             <Route path='/virtualFitting' component={VirtualFitting} />
             <Route
-              path="/personalstylist/:audioStatus/:buttonstate/:outfit/:color/:height/:size"
+              path="/personalstylist/:audioStatus/:buttonstate/:outfit/:color/:height/:size/:audioStatusvoice"
               component={PersonalStylist}
             />
             <Route path="/shopwithshape" component={ShopWithShape} />

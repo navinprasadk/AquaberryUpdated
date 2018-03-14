@@ -10,33 +10,6 @@ import { bindActionCreators } from 'redux';
 
 import AddtoCart from './../../redux/actions/addItem.js'
 
-const data=[{
-  imageurl:'top5.jpg',
-  name:'black tops',
-  cost:40
-},{
-  imageurl:'top1.jpg',
-  name:'black tops',
-  cost:40
-},{
-  imageurl:'top2.jpg',
-  name:'black tops',
-  cost:40
-},{
-  imageurl:'top3.jpg',
-  name:'black tops',
-  cost:40
-},{
-  imageurl:'top4.jpg',
-  name:'black tops',
-  cost:40
-},{
-  imageurl:'top5.jpg',
-  name:'black tops',
-  cost:40
-}]
-
-
 class WomenCategory extends Component{
   constructor(props){
     super(props);
@@ -172,7 +145,7 @@ var productData = (this.props.cartDetails.recommend.map((item,key) => {
 
     </Grid>
     <Grid>
-      <Link to='/personalstylist/false/false/false/false/false/false'>
+      <Link to='/personalstylist/false/false/false/false/false/false/false'>
       <Grid.Row style={{width:'100%'}}>
         {/* <Grid.Column width={1}/> */}
         <Grid.Column width={16} style={{position:'fixed',zIndex:'100',bottom:0,width:'100%'}}>

@@ -23,6 +23,7 @@ class PersonalStylist extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      audioStatusvoice: this.props.match.params.audioStatusvoice,
       audioStatus: this.props.match.params.audioStatus,
       audioStatusOutfit: false,
       audioStatusSpecificItems: false,
@@ -41,7 +42,7 @@ class PersonalStylist extends Component {
     };
   }
   componentDidMount() {
-    this.setState({ audioStatusvoice: true, audioStatus: "true" });
+    this.setState({ audioStatusvoice: 'false', audioStatus: "true" });
   }
   handleshape() {
     this.setState({ shopwithshape: true });
@@ -507,38 +508,6 @@ class PersonalStylist extends Component {
           >
             "Shop with shape"
           </a>
-          <br />
-          <br />
-          <br />
-          <span style={{ fontFamily: "Raleway", fontSize: "16px" }}>
-            Selected Size:{" "}
-          </span>
-          <strong
-            style={{
-              fontFamily: "Raleway",
-              // fontSize: "16px",
-              fontWeight: "bold", textTransform:'uppercase',
-              letterSpacing:'2px'
-            }}
-          >
-            {this.props.cartDetails.size}
-          </strong>
-          <center>
-            <Link to="/recommendation">
-              <Button
-                style={{
-                  backgroundColor: "#DF4B37",
-                  color: "white",
-                  marginTop: "8%",
-                  letterSpacing: "3px",
-                  boxShadow: "7px 16px 24px #eee",
-                  textTransform: "uppercase"
-                }}
-              >
-                Submit
-              </Button>
-            </Link>
-          </center>
         </Grid.Column>
 
         <Grid.Column width={1} />

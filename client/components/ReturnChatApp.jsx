@@ -178,7 +178,7 @@ class ReturnChatApp extends React.Component {
         this.setState({
           dateModal: true
         });
-      }, 5000);
+      }, 8000);
     } else {
       reply = "This query is not in my database but I am always learning.";
       this.textToSpeech(reply);

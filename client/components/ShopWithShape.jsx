@@ -102,7 +102,7 @@ class ShopWithShape extends Component {
         >
           Front View
         </center>
-        <Image src="./client/assets/Images/Newistock/ShopWithshape/iStock-508132676.jpg" style={{marginTop:'10%'}}/>
+        <Image src="./client/assets/Images/Newistock/Shopwithshape/iStock-508132676.jpg" style={{marginTop:'10%'}}/>
       </div>
     );
     var sideview = (
@@ -134,7 +134,7 @@ class ShopWithShape extends Component {
         >
           Side View
         </center>
-        <Image src="./client/assets/Images/Newistock/ShopWithshape/iStock-508132536.jpg" style={{height:'43vh',marginTop:'10%'}}/>
+        <Image src="./client/assets/Images/Newistock/Shopwithshape/iStock-508132536.jpg" style={{height:'43vh',marginTop:'10%'}}/>
       </div>
     );
     return (
@@ -181,7 +181,8 @@ class ShopWithShape extends Component {
                 </Grid.Column>
                 <Grid.Column width={1} />
                 <Grid.Column width={6}>
-                  <Link to="/personalstylist/true/true/true/true/true/true">
+                  {/* <Link to="/personalstylist/true/true/true/true/true/true/true"> */}
+                  <Link to='/recommendation'>
                     <Button color='green'
                       style={{
                         // backgroundColor: '#8BC34A',
