@@ -234,7 +234,7 @@ import AppBar from "./AppBar.jsx";
                 <Image
                   size="medium"
                   style={{ borderRadius: "2%", height: "43vh" }}
-                  src="/client/assets/Images/Newistock/Promoforyou/Outfitfor/iStock-512175755-1.jpg"
+                  src="/client/assets/Images/Newistock/Promoforyou/Outfitfor/iStock-512175755.jpg"
                 />
               </Grid.Column>
               <Grid.Column width={2} />
@@ -284,7 +284,7 @@ import AppBar from "./AppBar.jsx";
             <Grid.Column width={7}>
               <center style={{ fontWeight: "bold" }}>
                 <h4>
-                  Combo Price <span style={{ color: "green" }}> $85 </span>
+                  Combo Price <span style={{ color: "green" }}> $70 </span>
                 </h4>
               </center>
             </Grid.Column>

@@ -49,16 +49,16 @@ export default class ComboCart extends Component {
                         <Grid.Column width={1} />
                         <Grid.Column width={14} style={{ display: "flex", flexDirection: "row", justifyContent: "space-between", fontWeight: "bold", textTransform: "capitalise", letterSpacing: "2px" }}>
                             <span style={{ fontFamily: 'Raleway' }}>ITEMS(3)</span>
-                            <span style={{  fontFamily: 'Raleway' }}>TOTAL <span style={{fontWeight:'bolder'}}> $85</span></span>
+                            <span style={{  fontFamily: 'Raleway' }}>TOTAL <span style={{fontWeight:'bolder'}}> $70</span></span>
                         </Grid.Column>
                         <Grid.Column width={1} />
                     </Grid.Row>
 
                     <Grid.Row only='mobile' className="card_ComboCart" style={{ marginTop: "0%" }}>
                         <Grid.Column width={16} style={{ display: "flex", flexDirection: "row", justifyContent: "flex-start" }}>
-                            <Image size='tiny' style={{ borderRadius: "50%", height: '100%' }} src='/client/assets/Images/istock/686261786top.jpg' />
+                            <Image size='tiny' style={{ borderRadius: "50%", height: '100%' }} src='/client/assets/Images/Newistock/ComboCart/iStock-847389916-top.jpg' />
                             <p style={{ marginLeft: "3%" }}>
-                                <Header style={{fontFamily:'Raleway'}}> Blue women's suit dress</Header>
+                                <Header style={{fontFamily:'Raleway'}}> White women's dress</Header>
                                 <p style={{ color: '', display: "flex", flexDirection: "row", justifyContent: "space-between", fontSize: "90%", }}><span ><Header style={{ color: 'green', }}>$40</Header></span>   <span><span style={{ fontWeight: "bold", color: '', }}>Quantity</span> 1 </span> <span><b>Size</b>  S</span></p>
                             </p>
                         </Grid.Column>
@@ -74,9 +74,9 @@ export default class ComboCart extends Component {
                     <Grid.Row only='mobile' className="card_ComboCart" style={{ marginTop: "0%" }}>
         
                         <Grid.Column width={16} style={{ display: "flex", flexDirection: "row", justifyContent: "flex-start" }}>
-                            <Image size='tiny' style={{ borderRadius: "50%", height: '100%' }} src='/client/assets/Images/istock/686261786handbag.jpg' />
+                            <Image size='tiny' style={{ borderRadius: "50%", height: '100%' }} src='/client/assets/Images/Newistock/ComboCart/iStock-847389916-shoe-bag.jpg' />
                             <p style={{ marginLeft: "3%" }}>
-                                <Header style={{ fontFamily: 'Raleway' }} > Black Long Handbag</Header>
+                                <Header style={{ fontFamily: 'Raleway' }} > Beige sandals & Red handbag</Header>
                                 <p style={{ display: "flex", flexDirection: "row", justifyContent: "space-between", fontSize: "90%" }}><span><Header style={{ color: 'green', }}>$25</Header></span>   <span style={{ color: '' }}><span style={{ fontWeight: "bold", }}>Quantity</span> 1 </span> <span></span></p>
                             </p>
                         </Grid.Column>
@@ -92,9 +92,9 @@ export default class ComboCart extends Component {
 
                     <Grid.Row only='mobile' className="card_ComboCart" style={{ marginTop: "0%" }}>
                         <Grid.Column width={16} style={{ display: "flex", flexDirection: "row", justifyContent: "flex-start" }}>
-                            <Image size='tiny' style={{ borderRadius: "50%", height: '100%' }} src='/client/assets/Images/istock/686261786slipper.jpg' />
+                            <Image size='tiny' style={{ borderRadius: "50%", height: '100%' }} src='/client/assets/Images/Newistock/ComboCart/iStock-847389916-hat.jpg' />
                             <p style={{ marginLeft: "3%" }}>
-                                <h3 style={{fontFamily:'Raleway' }} > Black Slipper with heel</h3>
+                                <h3 style={{fontFamily:'Raleway' }} > Beige rounded hat</h3>
                                 <p style={{ display: "flex", flexDirection: "row", justifyContent: "space-between", fontSize: "90%",  }}><span><Header style={{ color: 'green' }}>$20</Header></span>   <span style={{ color: '' }}><span style={{ fontWeight: "bold", }}>Quantity</span> 1</span> <span><b>Size</b> 9 </span></p>
                             </p>
                         </Grid.Column>
@@ -138,7 +138,7 @@ export default class ComboCart extends Component {
                             </span>
                             
                             <span style={{ marginTop: '4%', display: 'flex', justifyContent: 'space-between', fontWeight: '700', fontSize: '120%' }}>
-                                <span style={{  letterSpacing: '1px', }}>Total Payable</span><span>$85 </span>
+                                <span style={{  letterSpacing: '1px', }}>Total Payable</span><span>$70 </span>
                             </span>    
                         </Grid.Column>
                     </Grid.Row>
