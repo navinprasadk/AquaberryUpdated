@@ -134,7 +134,7 @@ export default class PromotionsCheckout extends Component {
                             <Grid.Row only='mobile' >
                                 <Grid.Column width={1} />
                                 <Grid.Column width={14}>
-                                    <center><h4 style={{ fontFamily:'Raleway'}}> Balance amount in your digi wallet is <h3>$37</h3> </h4></center>
+                                    <center><h4 style={{ fontFamily:'Raleway'}}> Balance amount in your digi wallet is <h3>$52</h3> </h4></center>
                                 </Grid.Column>
                                 <Grid.Column width={1} />
                             </Grid.Row>

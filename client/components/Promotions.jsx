@@ -234,7 +234,7 @@ import AppBar from "./AppBar.jsx";
                 <Image
                   size="medium"
                   style={{ borderRadius: "2%", height: "43vh" }}
-                  src="/client/assets/Images/Newistock/Promoforyou/Outfitfor/iStock-512175755-1.jpg"
+                  src="/client/assets/Images/Newistock/Promoforyou/Outfitfor/iStock-512175755.jpg"
                 />
               </Grid.Column>
               <Grid.Column width={2} />
