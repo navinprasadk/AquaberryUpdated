@@ -102,7 +102,7 @@ class ShopWithShape extends Component {
         >
           Front View
         </center>
-        <Image src="./client/assets/Images/Newistock/Shopwithshape/iStock-508132676.jpg" style={{marginTop:'10%'}}/>
+        <Image src="./client/assets/Images/Newistock/Shopwithshape/iStock-508132676.jpg" style={{marginTop:'10%',height:'43vh'}}/>
       </div>
     );
     var sideview = (
