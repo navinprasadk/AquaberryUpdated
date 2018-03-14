@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { Grid, Image,Button , Icon, Dropdown, Modal, Label} from 'semantic-ui-react';
+import { Grid, Image,Button , Icon, Dropdown, Modal, Label, Rating, Accordion, List} from 'semantic-ui-react';
 import { Link, Redirect } from 'react-router-dom';
 import Slider from 'react-slick';
 import Appbar  from './AppBar.jsx';
@@ -25,7 +25,8 @@ this.state={
   audioStatus:false,
   redirect: false,
   confirmationModal: false,
-  addfavourite:false
+  addfavourite:false,
+  activeIndex: 0
 }
 this.handleVoice = this.handleVoice.bind(this);
   }
@@ -43,6 +44,13 @@ this.handleVoice = this.handleVoice.bind(this);
   addfav(){
     this.setState({addfavourite:true})
   }
+  handleClick(e, titleProps) {
+      if(titleProps == 0)
+        this.setState({activeIndex:-1});
+      else
+      this.setState({activeIndex:0});
+
+    }
   // selectsize(){
   //   this.setState({size:})
   // }
@@ -139,6 +147,43 @@ render(){
 
           </Grid.Column>
           <Grid.Column width={1}/>
+        </Grid.Row>
+        <Grid.Row style={{marginTop:'-4%'}}>
+          <Grid.Column width={2}/>
+          <Grid.Column width={14} style={{marginLeft:'7%'}}>
+            <label style={{fontSize:'17px',fontFamily:'Raleway'}}>Overall Rating : </label><Rating maxRating={5} defaultRating={4} icon='star' size='large' disabled/>
+          </Grid.Column>
+        </Grid.Row>
+        <Grid.Row>
+          <Grid.Column width={1}/>
+          <Grid.Column width={14}>
+            <Accordion>
+            <Accordion.Title style={{color:"#01579B", letterSpacing:'1px'}} active={this.state.activeIndex === 0} index={0} onClick={this.handleClick.bind(this)}>
+              <Icon name='dropdown' />
+              REVIEWS
+            </Accordion.Title>
+            <Accordion.Content active={this.state.activeIndex === 0}>
+            <List>
+              <List.Item>
+                <Icon name='user outline' />
+                <List.Content>
+                  <List.Header as='a'>Rachel</List.Header>
+                  <List.Description>Good material and came as expected.</List.Description>
+                </List.Content>
+              </List.Item>
+              <List.Item>
+                <Icon name='user outline' />
+                <List.Content>
+                  <List.Header as='a'>Lindsay</List.Header>
+                  <List.Description>Very beautiful and very soft material. Loved the fitting . Really recommend it for formal meetings.</List.Description>
+                </List.Content>
+                </List.Item>
+              </List>
+              <h4>Connect to <span><Icon color='blue' size='large' name='facebook' /></span>for live customer feedback. <span><a>click here</a></span>  </h4>
+
+            </Accordion.Content>
+            </Accordion>
+          </Grid.Column>
         </Grid.Row>
         <Grid.Row>
           <Grid.Column width={1}/>

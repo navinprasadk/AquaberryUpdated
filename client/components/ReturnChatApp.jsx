@@ -67,9 +67,9 @@ class ReturnChatApp extends React.Component {
     this.state = {
       userInput: "",
       dateModal: false,
-      open: false,
+
       autoHideDuration: 6000,
-      open: false,
+
       eventmessage: "Delivery date changed successfully",
       messages: new Array()
     };
@@ -172,10 +172,13 @@ class ReturnChatApp extends React.Component {
       };
       tempMessages.push(tempBotMessage);
       this.setState({
-        messages: tempMessages,
-        dateModal: true,
-        open: true
+        messages: tempMessages
       });
+      setTimeout(() => {
+        this.setState({
+          dateModal: true
+        });
+      }, 5000);
     } else {
       reply = "This query is not in my database but I am always learning.";
       this.textToSpeech(reply);
@@ -407,7 +410,7 @@ class ReturnChatApp extends React.Component {
           </Grid.Row>
         </Grid>
         {this.state.dateModal == true ? (
-          <Modal open={this.state.open} basic size="small">
+          <Modal open={this.state.dateModal} basic size="small">
             <Modal.Content>
               <Grid>
                 <Grid.Row>
@@ -433,7 +436,7 @@ class ReturnChatApp extends React.Component {
                       color="green"
                       inverted
                       onClick={() => {
-                        this.setState({ open: false });
+                        this.setState({ dateModal: false });
                       }}
                     >
                       OK

@@ -50,9 +50,7 @@ class ChatApp extends React.Component {
         this.state = {
             userInput: '',
             dateModal:false,
-            open:false,
             autoHideDuration: 6000,
-            open:false,
             dateValue:'',
             eventmessage: 'Delivery date changed successfully',
             messages: new Array()
@@ -150,7 +148,8 @@ class ChatApp extends React.Component {
         //   })
         // }
         else if (counter == 3) {
-          reply = 'Sure, your order will be delivered on .'
+          var chatreply = `Sure, your order will be delivered on ${this.state.dateValue}.`
+          reply = chatreply
           this.textToSpeech(reply);
           var tempMessages = this.state.messages;
           var tempBotMessage = {
@@ -172,9 +171,13 @@ class ChatApp extends React.Component {
           }
           tempMessages.push(tempBotMessage)
           this.setState({
-              messages: tempMessages,
-              dateModal:true, open:true
+              messages: tempMessages
           })
+          setTimeout(() => {
+            this.setState({
+              dateModal: true
+            });
+          }, 2000);
         }
         else {
           reply = 'This query is not in my database but I am always learning.'
@@ -388,13 +391,13 @@ class ChatApp extends React.Component {
 
           </Grid>
           {
-            this.state.dateModal == true ? <Modal open={this.state.open} basic size='small'>
+            this.state.dateModal == true ? <Modal open={this.state.dateModal} basic size='small'>
               <Modal.Content>
                 <Grid>
                   <Grid.Row>
                     <Grid.Column width={1}/>
                     <Grid.Column width={14}>
-                      <Header style={{color:'white',fontFamily:'Raleway'}}><center>Thanks Your Updated Delivery Date is 23rd march between 13:00 to 15:00 hours</center></Header>
+                      <Header style={{color:'white',fontFamily:'Raleway'}}><center>Your updated delivery date is {this.state.dateValue} between 13:00 and 15:00 hours</center></Header>
                     </Grid.Column>
                     <Grid.Column width={1}/>
                   </Grid.Row>
@@ -405,7 +408,7 @@ class ChatApp extends React.Component {
                   <Grid.Row>
                     <Grid.Column width={10}/>
                     <Grid.Column width={3}>
-                      <Button color='green' inverted onClick={() => {this.setState({open:false})}}>
+                      <Button color='green' inverted onClick={() => {this.setState({dateModal:false})}}>
                          OK
                       </Button>
                       </Grid.Column>

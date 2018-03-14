@@ -40,7 +40,7 @@ class PersonalStylist extends Component {
       handleSpecificHeight: false
     };
   }
-  handleVoice() {
+  componentDidMount() {
     this.setState({ audioStatusvoice: true, audioStatus: "true" });
   }
   handleshape() {
@@ -81,7 +81,7 @@ class PersonalStylist extends Component {
         <Grid.Column width={6}>
           <Image
             circular
-            onClick={this.handleVoice.bind(this)}
+            // onClick={this.handleVoice.bind(this)}
             src="./client/assets/Images/istock/bot.png"
             size="small"
             style={{
