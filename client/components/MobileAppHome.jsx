@@ -384,7 +384,7 @@ export default class MobileAppHome extends React.Component {
                       </List.Content>
                       <Image
                         avatar
-                        src="http://cdn.watchshop.com/profiler/thumb_cache/600s/99944281_v_1423897974.jpg"
+                        src="./client/assets/Images/Newistock/watch.jpg"
                         alt=""
                       />
                       <List.Content>
