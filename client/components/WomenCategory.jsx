@@ -57,9 +57,9 @@ var productData = (this.props.cartDetails.recommend.map((item,key) => {
 
         <Image src={item.imgurl} alt="" />
 
-        {/* <Link to="/signin"> */}
+
           {iconComponent}
-      {/* </Link> */}
+
         <div style={{fontFamily: 'Raleway'}} >
           <p className="WomenCategoryWebViewTitle" >{item.name}</p>
           <p className="WomenCategoryWebViewPrice" style={{marginTop:"-5%", marginBottom:"5%"}}>{item.price}</p>
@@ -83,19 +83,19 @@ var productData = (this.props.cartDetails.recommend.map((item,key) => {
            <span id='titleText' style={{fontWeight:'normal', letterSpacing:'3px', textTransform:'capitalize', color:"#eee", float:"left", fontSize:'140%'}}>Women's Dresses</span>
          </Menu.Item>
          <Menu.Menu position='right'>
-           <Link to='/wishList'>
+
                     <Menu.Item style={{marginTop:'3%',marginLeft:'-9%'}}>
                       <Icon name='empty heart' size='large' style={{color:'white',marginTop:'2%'}}/>
                <Label color='red' style={{marginTop:'-37%',marginLeft:'-29%'}} circular>{this.props.cartDetails.count}</Label>
                     </Menu.Item>
-</Link>
-                    {/* <Link to='/cart'> */}
+
+
 
                     <Menu.Item style={{marginTop:'-3%',marginLeft:'-21%'}}>
                       <Icon name='shopping cart' size='large' style={{color:'white',marginTop:'25%'}}/>
                <Label color='red' style={{marginTop:'-10%',marginLeft:'-21%'}} circular>0</Label>
                     </Menu.Item>
-         {/* </Link> */}
+
          </Menu.Menu>
        </Menu>
       </Grid.Column>
