@@ -11,7 +11,7 @@ const VirtualFitting = () => {
         <Grid.Row style={{marginTop:'10%'}}>
           <Grid.Column width={16}>
             <center>
-              <Image src='./client/assets/Images/iStock/vricon.png'/>
+              <Image src='./client/assets/Images/istock/vricon.png'/>
             </center>
           </Grid.Column>
         </Grid.Row>
