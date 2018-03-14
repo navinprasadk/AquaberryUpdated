@@ -233,7 +233,7 @@ import AppBar from "./AppBar.jsx";
               >
                 <Image
                   size="medium"
-                  style={{ borderRadius: "2%", height: "43vh" }}
+                  style={{ borderRadius: "2%", height: "50vh" }}
                   src="/client/assets/Images/Newistock/Promoforyou/Outfitfor/iStock-512175755.jpg"
                 />
               </Grid.Column>
@@ -253,7 +253,7 @@ import AppBar from "./AppBar.jsx";
                   size="medium"
                   style={{
                     borderRadius: "2%",
-                    height: "43vh",
+                    height: "50vh",
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",
