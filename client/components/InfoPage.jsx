@@ -10,7 +10,7 @@ class InfoPage extends Component {
     super();
     this.state={
        activeIndex: 0,
-  
+
       }
   }
 
@@ -67,7 +67,7 @@ class InfoPage extends Component {
                     </List>
                   </Accordion.Content>
 
-                     <Accordion.Title style={{color:"#01579B", letterSpacing:'1px'}} active={activeIndex === 4} index={4} onClick={this.handleClick.bind(this)}>
+                     <Accordion.Title style={{color:"#01579B", letterSpacing:'1px'}} active={activeIndex === 1} index={1} onClick={this.handleClick.bind(this)}>
                     <Icon name='dropdown' />
                     MORE PRODUCT DETAILS
                   </Accordion.Title>
@@ -81,7 +81,7 @@ class InfoPage extends Component {
                   </Accordion.Content>
 
 
-                  <Accordion.Title style={{color:"#01579B" , letterSpacing:'1px', textTransform:"uppercase"}} active={activeIndex === 1} index={1} onClick={this.handleClick.bind(this)}>
+                  <Accordion.Title style={{color:"#01579B" , letterSpacing:'1px', textTransform:"uppercase"}} active={activeIndex === 2} index={2} onClick={this.handleClick.bind(this)}>
                     <Icon name='dropdown' />
                     Size Guide
                   </Accordion.Title>
@@ -212,7 +212,7 @@ class InfoPage extends Component {
                       </Grid>
                 </Accordion.Content>
 
-                  <Accordion.Title style={{color:"#01579B" , letterSpacing:'1px', textTransform:"uppercase"}} active={activeIndex === 1} index={1} onClick={this.handleClick.bind(this)}>
+                  <Accordion.Title style={{color:"#01579B" , letterSpacing:'1px', textTransform:"uppercase"}} active={activeIndex === 3} index={3} onClick={this.handleClick.bind(this)}>
                     <Icon name='dropdown' />
                     Check In store
                   </Accordion.Title>
@@ -220,7 +220,7 @@ class InfoPage extends Component {
                     <Link to='/signin'> Click here <span style={{color:"black"}}> to view the availability</span></Link>
                   </Accordion.Content>
 
-                  <Accordion.Title style={{color:"#01579B" , letterSpacing:'1px'}} active={activeIndex === 1} index={1} onClick={this.handleClick.bind(this)}>
+                  <Accordion.Title style={{color:"#01579B" , letterSpacing:'1px'}} active={activeIndex === 4} index={4} onClick={this.handleClick.bind(this)}>
                     <Icon name='dropdown' />
                     DELIVERY
                   </Accordion.Title>
@@ -230,7 +230,7 @@ class InfoPage extends Component {
 
 
 
-                  <Accordion.Title style={{color:"#01579B", letterSpacing:'1px'}}active={activeIndex === 3} index={3} onClick={this.handleClick.bind(this)}>
+                  {/* <Accordion.Title style={{color:"#01579B", letterSpacing:'1px'}}active={activeIndex === 3} index={3} onClick={this.handleClick.bind(this)}>
                     <Icon name='dropdown' />
                     REVIEWS
                   </Accordion.Title>
@@ -252,14 +252,13 @@ class InfoPage extends Component {
                       </List.Item>
                     </List>
                     <h4>Connect to <span><Icon color='blue' size='large' name='facebook' /></span>for live customer feedback. <span><a>click here</a></span>  </h4>
-                    {/* <p> to connect with Aquaberry page</p> */}
-                  </Accordion.Content>
+                  </Accordion.Content> */}
 
-                  <Accordion.Title style={{color:"#01579B", letterSpacing:'1px'}} active={activeIndex === 2} index={2} onClick={this.handleClick.bind(this)}>
+                  <Accordion.Title style={{color:"#01579B", letterSpacing:'1px'}} active={activeIndex === 5} index={5} onClick={this.handleClick.bind(this)}>
                     <Icon name='dropdown' />
                     RETURN
                   </Accordion.Title>
-                  <Accordion.Content active={activeIndex === 6}>
+                  <Accordion.Content active={activeIndex === 5}>
                     <p><strong>Returns are easy</strong></p>
                     <Image src='https://images-eu.ssl-images-amazon.com/images/G/31/returns/return-instructions1._CB352516716_.png' alt="" />
                     <Image src='https://images-eu.ssl-images-amazon.com/images/G/31/returns/return-instructions2._CB352516653_.png' alt="" />

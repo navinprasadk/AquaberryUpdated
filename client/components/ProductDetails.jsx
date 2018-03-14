@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { Grid, Image,Button , Icon, Dropdown, Modal, Label, Rating, Accordion, List} from 'semantic-ui-react';
+import { Grid, Image,Button , Icon, Dropdown, Modal, Label, Rating, List, Header} from 'semantic-ui-react';
 import { Link, Redirect } from 'react-router-dom';
 import Slider from 'react-slick';
 import Appbar  from './AppBar.jsx';
@@ -157,32 +157,29 @@ render(){
         <Grid.Row>
           <Grid.Column width={1}/>
           <Grid.Column width={14}>
-            <Accordion>
-            <Accordion.Title style={{color:"#01579B", letterSpacing:'1px'}} active={this.state.activeIndex === 0} index={0} onClick={this.handleClick.bind(this)}>
-              <Icon name='dropdown' />
+            <Header as='h4' style={{fontFamily:'Raleway'}}>
               REVIEWS
-            </Accordion.Title>
-            <Accordion.Content active={this.state.activeIndex === 0}>
+            </Header>
+
+
             <List>
               <List.Item>
                 <Icon name='user outline' />
                 <List.Content>
-                  <List.Header as='a'>Rachel</List.Header>
-                  <List.Description>Good material and came as expected.</List.Description>
+                  <List.Header as='a' style={{fontFamily:'Raleway'}}>Rachel</List.Header>
+                  <List.Description style={{fontSize:'16px',fontFamily:'Raleway'}}>Good material and came as expected.</List.Description>
                 </List.Content>
               </List.Item>
               <List.Item>
                 <Icon name='user outline' />
                 <List.Content>
-                  <List.Header as='a'>Lindsay</List.Header>
-                  <List.Description>Very beautiful and very soft material. Loved the fitting . Really recommend it for formal meetings.</List.Description>
+                  <List.Header as='a' style={{fontFamily:'Raleway'}}>Lindsay</List.Header>
+                  <List.Description style={{fontSize:'16px',fontFamily:'Raleway'}}>Very beautiful and very soft material. Loved the fitting . Really recommend it for formal meetings.</List.Description>
                 </List.Content>
                 </List.Item>
               </List>
-              <h4>Connect to <span><Icon color='blue' size='large' name='facebook' /></span>for live customer feedback. <span><a>click here</a></span>  </h4>
-
-            </Accordion.Content>
-            </Accordion>
+              <span style={{marginLeft:'80%',color:'#4183c4'}}>See All</span>
+              {/* <h4>Connect to <span><Icon color='blue' size='large' name='facebook' /></span>for live customer feedback. <span><a>click here</a></span>  </h4> */}
           </Grid.Column>
         </Grid.Row>
         <Grid.Row>
