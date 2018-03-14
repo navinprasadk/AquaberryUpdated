@@ -81,7 +81,7 @@ class Recommendation extends Component {
       wishlistStatus: true
     });
   }
-  handleVoiceRecommendation() {
+  componentDidMount() {
     this.setState({ voiceRecommendation: "true" });
   }
   onEnd() {}
@@ -158,21 +158,22 @@ class Recommendation extends Component {
         <AppBar />
 
         <Grid>
-          <Grid.Row>
-            <Grid.Column width={1} />
-            <Grid.Column width={6}>
-              <Image
+          <Grid.Row style={{marginTop:'5%'}}>
+            {/* <Grid.Column width={1} /> */}
+            <Grid.Column width={16}>
+              <center><Image
                 circular
-                onClick={this.handleVoiceRecommendation.bind(this)}
+                // onClick={this.handleVoiceRecommendation.bind(this)}
                 src="./client/assets/Images/istock/bot.png"
                 size="small"
                 style={{
                   top: "20%"
                   // left: "-134%"
                 }}
-              />
+              /></center>
+
             </Grid.Column>
-            <Grid.Column width={9} />
+            {/* <Grid.Column width={9} /> */}
           </Grid.Row>
           {this.state.Recommended == true ? (
             <Grid.Row style={{ marginTop: "2%" }}>
@@ -193,7 +194,7 @@ class Recommendation extends Component {
                     height: "2vh"
                   }}
                 >
-                  <center style={{ fontSize: "90%" }}>Recommended items</center>
+                  <center style={{ fontSize: "90%",marginLeft:'-9%' }}>Recommended items</center>
                   {/* <Image
                   src="./client/assets/Images/flaticon/augmented-realityr.svg"
                   size="mini"

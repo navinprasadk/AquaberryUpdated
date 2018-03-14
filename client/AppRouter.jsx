@@ -34,6 +34,7 @@ import PersonalStylist from "./components/PersonalStylist.jsx";
 import FeedBack from "./components/FeedBack.jsx";
 import ShopWithShape from "./components/ShopWithShape.jsx";
 import ModifySize from "./components/ModifySize.jsx";
+import VirtualFitting from './components/VirtualFitting.jsx';
 import { Provider } from "react-redux";
 import { createStore } from "redux";
 import allReducers from "./../redux/reducers/combineReducers.js";
@@ -79,6 +80,7 @@ export default class AppRouter extends Component {
             <Route path="/comboCart" component={ComboCart} />
             <Route path="/exchangepage" component={ExchangePage} />
             <Route path="/exchangeSuccessful" component={ExchangeSuccessful} />
+            <Route path='/virtualFitting' component={VirtualFitting} />
             <Route
               path="/personalstylist/:audioStatus/:buttonstate/:outfit/:color/:height/:size"
               component={PersonalStylist}

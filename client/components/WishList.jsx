@@ -82,7 +82,8 @@ const WishList = () => {
 
       <Grid>
         <Grid.Row>
-          <Grid.Column width={16} style={{ position: "fixed", bottom: "0%" }}>
+          <Link to='/virtualFitting'>
+          <Grid.Column width={16} style={{ position: "fixed", bottom: "0%",width:'100%' }}>
             <Segment
               style={{
                 backgroundColor: "#ed6a07",
@@ -96,6 +97,7 @@ const WishList = () => {
               </center>
             </Segment>
           </Grid.Column>
+          </Link>
         </Grid.Row>
       </Grid>
     </div>
