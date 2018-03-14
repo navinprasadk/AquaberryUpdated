@@ -19,7 +19,8 @@ export default class OrderDetails extends Component {
     super(props);
     this.state = {
       activeIndex: 0,
-      dateValue: ""
+      dateValue: "",
+      dateValueOrder: ""
     };
   }
 
@@ -29,6 +30,13 @@ export default class OrderDetails extends Component {
     var x = d.toString().slice(4, 16);
     this.setState({
       dateValue: x
+    });
+
+    var today = new Date();
+    today.setDate(today.getDate() + 2);
+    var k = today.toString().slice(4, 16);
+    this.setState({
+      dateValueOrder: k
     });
   }
 
@@ -146,7 +154,7 @@ export default class OrderDetails extends Component {
                   fontFamily: "Raleway"
                 }}
               >
-                Placed on 23/02/18
+                Placed on {this.state.dateValueOrder}
               </p>
             </Grid.Column>
             <Divider />
@@ -236,7 +244,7 @@ export default class OrderDetails extends Component {
                 className="lightGreyText"
                 style={{ position: "right", fontSize: "75%" }}
               >
-                Placed on 23/02/18
+                Placed on Mar 13 2018
               </p>
             </Grid.Column>
             <Divider />
@@ -313,7 +321,7 @@ export default class OrderDetails extends Component {
                 className="lightGreyText"
                 style={{ position: "right", fontSize: "75%" }}
               >
-                Placed on 21/02/18
+                Placed on Feb 21 2018
               </p>
             </Grid.Column>
             <Divider />
@@ -349,9 +357,9 @@ export default class OrderDetails extends Component {
                     <span style={{ fontWeight: "bold" }}>Quantity</span> 3 Items
                   </span>{" "}
                 </p>
-                  <p className="greyText">
-                    <Link to="exchangepage"> Need Help? </Link>{" "}
-                  </p>
+                <p className="greyText">
+                  <Link to="exchangepage"> Need Help? </Link>{" "}
+                </p>
               </p>
             </Grid.Column>
           </Grid.Row>
@@ -390,7 +398,7 @@ export default class OrderDetails extends Component {
                 className="lightGreyText"
                 style={{ position: "right", fontSize: "75%" }}
               >
-                Placed on 05/11/17
+                Placed on Nov 05 2017
               </p>
             </Grid.Column>
             <Divider />
@@ -426,7 +434,9 @@ export default class OrderDetails extends Component {
                     <span style={{ fontWeight: "bold" }}>Quantity</span> 1 Item
                   </span>{" "}
                 </p>
-                <p className="greyText"><Link to='order'> Need Help?</Link> </p>
+                <p className="greyText">
+                  <Link to="order"> Need Help?</Link>{" "}
+                </p>
               </p>
             </Grid.Column>
           </Grid.Row>
