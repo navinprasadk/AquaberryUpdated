@@ -53,11 +53,11 @@ class PersonalStylist extends Component {
   handlesubmit() {
     this.setState({ buttonstate: "true", audioStatusOutfit: true });
   }
-  handleoutfit() {
-    this.setState({ outfit: "true", audioStatusSpecificItems: true });
-  }
+  // handleoutfit() {
+  //   this.setState({ outfit: "true", audioStatusSpecificItems: true });
+  // }
   handleColor() {
-    this.setState({ color: "true", audioStatusColor: true });
+    this.setState({ outfit: "true", audioStatusSpecificItems: true });
   }
   handleHeight() {
     this.setState({ height: "true", audioStatusHeight: true });
@@ -219,7 +219,7 @@ class PersonalStylist extends Component {
           />
           <center>
             <Button
-              onClick={this.handleoutfit.bind(this)}
+              onClick={this.handleColor.bind(this)}
               style={{
                 backgroundColor: "#DF4B37",
                 color: "white",
@@ -235,52 +235,52 @@ class PersonalStylist extends Component {
         {/* <Grid.Column width={1}/> */}
       </Grid.Row>
     );
-    var Specific = (
-      <Grid.Row>
-        <Grid.Column width={16}>
-          <center>
-            <Form>
-              <Form.Field inline>
-                <label
-                  style={{
-                    fontFamily: "Raleway",
-                    // fontWeight: "bold",
-                    fontSize: "100%",
-                    marginTop: "10%",
-                    textTransform: "uppercase",
-                    letterSpacing: "1px"
-                  }}
-                >
-                  Any Specific Items
-                </label>
-                <Input
-                  onChange={this.handleSpecificItemsChange.bind(this)}
-                  placeholder="Add Items..."
-                />
-              </Form.Field>
-            </Form>
-          </center>
-
-          <br />
-          <center>
-            {this.state.specificItemsStatus ? (
-              <Button
-                onClick={this.handleColor.bind(this)}
-                style={{
-                  backgroundColor: "#DF4B37",
-                  color: "white",
-                  marginRight: "-7%",
-                  boxShadow: "7px 16px 24px #eee",
-                  letterSpacing: "2px"
-                }}
-              >
-                NEXT
-              </Button>
-            ) : null}
-          </center>
-        </Grid.Column>
-      </Grid.Row>
-    );
+    // var Specific = (
+    //   <Grid.Row>
+    //     <Grid.Column width={16}>
+    //       <center>
+    //         <Form>
+    //           <Form.Field inline>
+    //             <label
+    //               style={{
+    //                 fontFamily: "Raleway",
+    //                 // fontWeight: "bold",
+    //                 fontSize: "100%",
+    //                 marginTop: "10%",
+    //                 textTransform: "uppercase",
+    //                 letterSpacing: "1px"
+    //               }}
+    //             >
+    //               Any Specific Items
+    //             </label>
+    //             <Input
+    //               onChange={this.handleSpecificItemsChange.bind(this)}
+    //               placeholder="Add Items..."
+    //             />
+    //           </Form.Field>
+    //         </Form>
+    //       </center>
+    //
+    //       <br />
+    //       <center>
+    //         {this.state.specificItemsStatus ? (
+    //           <Button
+    //             onClick={this.handleColor.bind(this)}
+    //             style={{
+    //               backgroundColor: "#DF4B37",
+    //               color: "white",
+    //               marginRight: "-7%",
+    //               boxShadow: "7px 16px 24px #eee",
+    //               letterSpacing: "2px"
+    //             }}
+    //           >
+    //             NEXT
+    //           </Button>
+    //         ) : null}
+    //       </center>
+    //     </Grid.Column>
+    //   </Grid.Row>
+    // );
     var colorpage = (
       <Grid.Row style={{ marginLeft: "13%" }}>
         <Grid.Column width={1} />
@@ -594,8 +594,8 @@ class PersonalStylist extends Component {
         <Grid>
           {chat}
           {this.state.buttonstate == "true" ? Outfits : null}
-          {this.state.outfit == "true" ? Specific : null}
-          {this.state.color == "true" ? colorpage : null}
+          {/* {this.state.outfit == "true" ? Specific : null} */}
+          {this.state.outfit == "true" ? colorpage : null}
           {this.state.height == "true" ? Height : null}
           {this.state.size == "true" ? Size : null}
         </Grid>
@@ -605,13 +605,13 @@ class PersonalStylist extends Component {
         {this.state.audioStatusOutfit && (
           <VoicePlayer play text="Select the outfit occasion!!" />
         )}
-        {this.state.audioStatusSpecificItems && (
+        {/* {this.state.audioStatusSpecificItems && (
           <VoicePlayer
             play
             text="any specific items you want to mention here!!"
           />
-        )}
-        {this.state.audioStatusColor && (
+        )} */}
+        {this.state.audioStatusSpecificItems && (
           <VoicePlayer play text="let me know your color preference?" />
         )}
         {this.state.audioStatusHeight && (
